@@ -408,6 +408,7 @@ header {
     font-style: italic;
     font-size: 10px;
     text-transform: uppercase;
+    letter-spacing: 3px;
     width: 70%;
     float: right; }
     header h4::before {
@@ -427,11 +428,11 @@ header {
     line-height: 1;
     margin: 22px 0;
     display: inline-block;
-    padding-right: 15px;
     margin-right: 15px; }
   header .address:after {
     content: "/";
-    font-size: 18px;
+    font-size: 20px;
+    margin-left: 15px;
   }
     header .address span {
       text-transform: none;
@@ -2051,7 +2052,7 @@ header .search #searchform {
 .phones > div {
   margin-right: 10px;
 }
-header .contact-header-wrapper {
+div.col-sm-9.contact-header-wrapper {
     text-align: right;
 }
 
@@ -2096,4 +2097,36 @@ header .phones {
 	.bazz-widget-form-submit {
 		width:35% !important;
 	}
+}
+.phone-numbers-wrapper {
+  font-size: 22px;
+  color: #4c5059;
+  font-family: "Garamond";
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+.phone-numbers-wrapper .number-item {
+  text-align: center;
+}
+.phone-numbers-wrapper .number-item:after {
+  content: url(/wp-content/themes/zlata/img/green-dot.png);
+  position: absolute;
+  right: -4px;
+  top: -4px;
+}
+.phone-numbers-wrapper .number-item:last-child:after {
+  visibility: hidden;
+}
+.phone-numbers-wrapper .number-item:before {
+  content: url(/wp-content/themes/zlata/img/green-dot.png);
+  position: absolute;
+  left: -4px;
+  top: -4px;
+  visibility: hidden;
+}
+.phone-numbers-wrapper .number-item a {
+  color: #4c5059;
+}
+.phone-numbers-wrapper .number-item a:hover {
+  text-decoration: none;
 }

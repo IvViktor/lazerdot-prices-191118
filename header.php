@@ -78,18 +78,18 @@
                         <img src="<?php bloginfo('template_url'); ?>/img/logo-gold.png" alt="лазерная косметология Николаев"/>
                     </a>
                 </div>
-                <div class="col-sm-9 contact-header-wrapper">
+                <div class="col-sm-9 contact-header-wrapper" style="text-align: right;">
                     <div class="address">
-                        Адрес:  <span>Украина, г.Николаев, ул.Бузника 14</span>
+                        Адрес клиники:  <span>Украина, г.Николаев, ул.Бузника 14</span>
                     </div>
                     <div class = "work-time">
                         <?php dynamic_sidebar( 'top-area-5' ); ?>
                     </div>
-                    <div class = "widgets-flex">
-                        <div class="phones">
-                            <div><?php dynamic_sidebar( 'top-area-1' ); ?></div>
-                            <div><?php dynamic_sidebar( 'top-area-2' ); ?></div>
-                            <div><?php dynamic_sidebar( 'top-area-3' ); ?></div>
+                    <div>
+                        <div class="phone-numbers-wrapper row">
+                            <div class="col-md-4 number-item"><?php dynamic_sidebar( 'top-area-1' ); ?></div>
+                            <div class="col-md-4 number-item"><?php dynamic_sidebar( 'top-area-2' ); ?></div>
+                            <div class="col-md-4 number-item"><?php dynamic_sidebar( 'top-area-3' ); ?></div>
                         </div>
                         <div class = "search"><?php dynamic_sidebar( 'top-area-4' ); ?></div>
                     </div>
