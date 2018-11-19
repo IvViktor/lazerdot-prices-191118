@@ -1,0 +1,331 @@
+.plastic-box .row{
+	margin-bottom: 20px;
+}
+.pl-box{
+	border-bottom: 1px solid #e5e5e5;
+}
+.pl-h{
+	margin: 0;
+	font-weight: 700;
+	font-size: 24px;
+	font-family: 'EB Garamond',serif;
+	color: #fff;
+	line-height: 40px;
+	text-align: center;
+	text-transform: uppercase;
+	background: #0cc2b3;
+}
+.pl-list{
+	padding: 18px;
+}
+.pl-list li{
+	padding-bottom: 18px;
+	padding-left: 22px;
+	list-style: none;
+	margin: 0;
+	background: url(../img/list.png) no-repeat 0 3px;
+}
+.pl-list li:last-child{
+	padding-bottom: 0;
+}
+.pl-list li a{
+	font-size: 14px;
+	color: #4c5059;
+	text-decoration: none;
+}
+.pl-list li a:hover{
+	color: #0cc2b3;
+	text-decoration: underline;
+}
+body:not(.home) #content.about-content{
+    padding-bottom: 0;
+}
+.about-slider-h{
+	margin: 0;
+	padding-bottom: 15px;
+	font-weight: 700;
+	font-size: 18px;
+	color: #4c5059;
+	text-transform: uppercase;
+}
+.about-slider-p{
+	font-weight: 300;
+	font-size: 14px;
+	color: #4c5059;
+	line-height: 20px;
+}
+.about-s-btn{
+	position: relative;
+	display: block;
+	float: left;
+	width: 70px;
+	height: 70px;
+	margin-right: 10px;
+	overflow: hidden;
+	
+}
+.about-s-btn .over{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(210,242, 251, 0.4);
+	border-radius: 50%;
+}
+.about-s-btn:hover > .over{
+	display: none;
+}
+.owl-about-nav{
+	margin-top: -70px;
+	margin-bottom: 70px;
+}
+#owl-about {
+    overflow: hidden;
+}
+#owl-about .owl-item {
+    float: left;
+}
+#owl-about .owl-nav{
+    display: none;
+}
+.advantage-box{
+	padding-bottom: 159px;
+	background: url(../img/advantage-back.png) no-repeat center 150px #00b8a8;
+}
+.advantage-h2,
+.advantage-h3,
+.advantage-p{
+	color: #fff;
+}
+.advantage-h2{
+	margin: 0 0 60px 0;
+	padding: 83px 0 48px 0;
+	font-family: 'EB Garamond',serif;
+    font-size: 30px;
+    text-transform: uppercase;
+	text-align: center;
+}
+.advantage-h3{
+	margin: 0;
+	padding-top: 3px;
+	padding-bottom: 22px;
+	padding-left: 40px;
+	font-weight: 700;
+	font-size: 18px;
+	background: url(../img/advantage-h3.png) no-repeat 0 0;
+}
+.advantage-p{
+	padding-bottom: 60px;
+	margin: 0;
+}
+.advantage-itm-l{
+	padding-right: 10px;
+	padding-left: 60px;
+	
+}
+.advantage-itm-r{
+	padding-right: 60px;
+	padding-left: 0px;
+}
+.about-you-box{
+	background-color: #f0f0f0;
+}
+.about-you-h2{
+	margin: 0;
+	padding-top: 40px;
+	padding-bottom: 15px;
+	font-family: 'EB Garamond',serif;
+    font-size: 30px;
+	color: #4c5059;
+	text-transform: uppercase;
+	border-bottom: 1px solid #e5e5e5;
+	background: url(../img/rumbus.png) no-repeat 115px 42px;
+}
+.about-you-p{
+	margin: 0;
+	padding-top: 29px;
+	padding-bottom: 48px;
+	color: #4c5059;
+}
+.why-box{
+	padding-bottom: 95px;
+}
+.why-h2{
+	margin: 0;
+	margin-bottom: 69px;
+	padding-top: 70px;
+	padding-bottom: 15px;
+	font-family: 'EB Garamond',serif;
+    font-size: 30px;
+	color: #4c5059;
+	text-transform: uppercase;
+	border-bottom: 1px solid #e5e5e5;
+	background: url(../img/rumbus.png) no-repeat 545px 72px;
+}
+.us-h2{
+	margin: 0;
+	margin-bottom: 50px;
+	padding-bottom: 15px;
+	font-family: 'EB Garamond',serif;
+    font-size: 30px;
+	color: #4c5059;
+	text-transform: uppercase;
+	border-bottom: 1px solid #e5e5e5;
+	background: url(../img/rumbus.png) no-repeat 121px 2px;
+}
+.acardeon-h2{
+	margin: 0;
+	margin-bottom: 50px;
+	padding-bottom: 15px;
+	font-family: 'EB Garamond',serif;
+    font-size: 30px;
+	color: #4c5059;
+	text-transform: uppercase;
+	border-bottom: 1px solid #e5e5e5;
+	background: url(../img/rumbus.png) no-repeat 388px 2px;
+}
+.us-box .container{
+	border-bottom: 1px solid #e5e5e5;
+}
+.us-box p{
+	max-width: 620px;
+	padding-bottom: 10px;
+	color: #4c5059;
+}
+.why-h3{
+	margin: 0;
+	padding-top: 180px;
+	font-weight: 300;
+	font-size: 18px;
+	color: #4c5059;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 26px;
+	background-repeat: no-repeat;
+	background-position: center 0;
+}
+.why-h3-1{
+	background-image: url(../img/why-1.png);
+}
+.why-h3-2{
+	background-image: url(../img/why-2.png);
+}
+.why-h3-3{
+	background-image: url(../img/why-3.png);
+}
+.why-h3-4{
+	background-image: url(../img/why-4.png);
+}
+.why-h3 span{
+	font-weight: 700;
+	color: #00bfaf;
+}
+.us-slogan{
+	margin-top: 50px;
+	font-weight: 700;
+	font-size: 18px;
+	color: #4c5059;
+}
+.us-box .ariston{
+	margin-bottom: 75px;
+}
+.sertificate-box{
+	padding-top: 50px;
+	padding-bottom: 60px;
+}
+.sertificate-box div{
+	text-align: center;
+}
+.acardeon-box{
+	padding-top: 70px;
+	padding-bottom: 68px;
+	background-color:#f3f3f3;
+}
+.ui-accordion-header{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 30px;
+	border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+	cursor: pointer;
+
+}
+.accordion-head img{
+	margin-right: 30px;
+}
+.accordion-head h3{
+	margin: 0;
+	padding-top: 10px;
+	padding-bottom: 14px;
+	font-weight: 700;
+	font-weight: 18px;
+	color: #4c5059;
+	text-transform: uppercase;
+}
+.accordion-head p{
+	font-weight: 300;
+	color: #4c5059;
+}
+.ui-accordion-header-collapsed{
+	background: url(../img/acardeon-plus.png) no-repeat 97% center;
+}
+.ui-accordion-header-active{
+	background: url(../img/acardeon-dash.png) no-repeat 97% center;
+	background-color: #fff;
+	border-color: #fff;
+}
+.ui-accordion-content{
+	border-top: 1px solid #e5e5e5;
+}
+.ui-accordion-content{
+	margin: 0;
+	padding:20px 30px;
+	font-weight: 700;
+	font-weight: 300;
+	color: #4c5059;
+	text-transform: uppercase;
+}
+#accordion li{
+	padding-bottom: 18px;
+	font-size: 14px;
+    text-transform: initial;
+	font-weight: 300;
+	color: #4c5059;
+	list-style: none;
+}
+#accordion li::before {
+    content: '';
+    display: block;
+    float: left;
+    height: 12px;
+    width: 12px;
+    margin-right: 11px;
+    padding-bottom: 18px;
+    background-image: url(../img/list.png);
+    background-position: center 3px;
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
+}
+.acardeon-ul-r, .acardeon-ul-l{
+	float: left;
+}
+.acardeon-ul-l{
+	max-width: 302px;
+	padding-right: 40px;
+}
+.acardeon-ul-r{
+	max-width: 595px;
+}
+.table.price del{
+	text-decoration: none;
+	margin-left: -4px;
+}
+.table.price del strong{
+	padding: 0 5px;
+    text-align: center;
+	background-image: linear-gradient(transparent 7px,#cc1f1f 7px,#cc1f1f 10px,transparent 9px);
+}
+.table.price td  strong{
+	padding: 0 5px;
+}

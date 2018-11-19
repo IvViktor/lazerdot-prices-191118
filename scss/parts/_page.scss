@@ -1,0 +1,127 @@
+/*================================================
+PAGE
+================================================*/
+.page-template-default {
+
+    .blog-image {
+        margin-bottom: 20px;
+        overflow: hidden;
+        @include size(100% 350px);
+
+        .img-wrap {
+            @include size(100%);
+        }
+    }
+}
+
+.page {
+    #content {
+        article {
+            ul {
+                margin: 0 0 15px 0;
+                padding: 0;
+
+                > li {
+                    > ul {
+                        margin-left: 20px;
+                    }
+                }
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+
+
+.category, .archive {
+    #content {
+        h2 {
+            a {
+                color: inherit;
+            }
+        }
+    }
+}
+
+.page-template-page-reviews {
+    #content {
+        .page-title {
+            margin-bottom: 15px;
+        }
+        article {
+            .article-footer {
+                color: $dark-gray;
+
+                time {
+                    font-style: italic;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+
+    #show-review-form {
+        display: inline-block;
+        margin-bottom: 55px;
+        text-decoration: none !important;
+        color: $light-green;
+
+        &.show {
+            color: $dark-gray;
+        }
+    }
+
+    .katb_input_style {
+        margin-bottom: 40px;
+        
+        [name="tb_author"], [name="tb_email"], textarea {
+            width: 100%;
+        }
+        
+        .katb_reset {
+            display: none;
+        }
+        
+        .katb_captcha {
+            float: right;
+            width: auto;
+        }
+        
+        .katb_submit {
+            float: right;
+            border: none;
+            background-color: $light-green;
+            color: $white;
+            padding: 10px 25px;
+            border-radius: 20px;
+        }
+        
+        .katb_required_label {
+            display: inline-block;
+            color: $red;
+            font-size: 12px;
+            padding: 7px 0;
+            text-align: right;
+        }
+    }
+
+    .katb_test_box_basic {
+        float: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        
+        .katb_author {
+            font-size: 18px;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 1.41 !important;
+        }
+    }
+}

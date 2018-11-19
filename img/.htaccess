@@ -1,0 +1,14 @@
+RewriteCond %{HTTPS} "on"
+RewriteRule .* http://%{HTTP_HOST}%{REQUEST_URI} [R=301,L,QSA]
+
+Redirect 301 /single1.html http://resumarea.com/
+Redirect 301 /cv-writing.html http://resumarea.com/cv-writing/
+Redirect 301 /cv-editing.html http://resumarea.com/cv-editing/
+Redirect 301 /cover-letter.html http://resumarea.com/cover-letter/
+Redirect 301 /linkedin-writing.html http://resumarea.com/linkedin-profile-writing/
+
+Redirect 301 /single.html http://resumewritinglab.com/
+Redirect 301 /cv-writing1.html http://resumewritinglab.com/cv-writing.html
+Redirect 301 /cv-editing1.html http://resumewritinglab.com/cv-editing.html
+Redirect 301 /cover-letter1.html http://resumewritinglab.com/cover-letter-writing.html
+Redirect 301 /linkedin-writing1.html http://resumewritinglab.com/linkedin-profile-writing.html

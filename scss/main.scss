@@ -1,0 +1,42 @@
+@import "bourbon/_bourbon.scss";
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,100,100italic,400italic,500,500italic,700italic,700,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=EB+Garamond&subset=latin,cyrillic);
+@import "../fonts/Ariston-Normal/styles.css";
+
+@import "_variables.scss";
+@import "_preloader.scss";
+
+@font-face {
+    font-family: 'Garamond-Bold';
+    src: url('../fonts/garamond/Garamond-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/garamond/Garamond-Bold.woff') format('woff'), url('../fonts/garamond/Garamond-Bold.ttf')  format('truetype'), url('../fonts/garamond/Garamond-Bold.svg#Garamond-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+%main-transition {
+    @include transition(all 0.3s ease);
+}
+
+%background-image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@include selection {
+    background-color: rgba($light-green, 0.5);
+    color: $white;
+}
+
+
+@import "parts/_main.scss";
+@import "parts/_header.scss";
+@import "parts/_navigation.scss";
+@import "parts/_sidebar.scss";
+@import "parts/_home-page.scss";
+@import "parts/_blog.scss";
+@import "parts/_page.scss";
+@import "parts/_page-contacts.scss";
+@import "parts/_footer.scss";
