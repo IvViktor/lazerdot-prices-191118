@@ -67,7 +67,7 @@ COLORS
   src: url("../fonts/garamond/Garamond-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/garamond/Garamond-Bold.woff") format("woff"), url("../fonts/garamond/Garamond-Bold.ttf") format("truetype"), url("../fonts/garamond/Garamond-Bold.svg#Garamond-Bold") format("svg");
   font-weight: normal;
   font-style: normal; }
-.btn, nav menu > li, nav menu > li > a, nav menu > li > ul.sub-menu, nav menu > li > ul.sub-menu a {
+.btn, nav menu > li, nav menu > li > a, nav menu > li > ul.sub-menu, nav menu > li > ul.sub-menu a, #searchform-menu-item button {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease; }
 
@@ -356,35 +356,48 @@ input[type="text"] {
     /*color: #abadb3; }*/
   /*#searchform input[type="text"] {*/
     /*width: 100%; }*/
-
-#searchform-menu-item:before, #searchform-menu-item:after {
+#searchform-menu-item {
+  position: relative;
+}
+#searchform-menu-item button {
+  height: 100%;
+  background-color: transparent;
+  color: transparent;
+  border: none;
+  outline: none;
+}
+#searchform-menu-item button:before, #searchform-menu-item button:after {
   position: absolute;
   display: block;
   top: 0;
   left: 5px;
   width: 40px;
-  height: 40px;
+  height: 38px;
   text-align: center;
   font-family: FontAwesome;
-  line-height: 40px;
-  font-size: 22px;
+  line-height: 38px;
+  font-size: 18px;
   transition: .33s all;
 }
-#searchform-menu-item:before {
+#searchform-menu-item button:hover:before, #searchform-menu-item button:hover:after,
+#searchform-menu-item button:focus:before, #searchform-menu-item button:focus:after {
+  color: #00bfaf;
+}
+#searchform-menu-item button:before {
   content: "\f002";
   -webkit-transform: scale(1) rotate(0deg);
   transform: scale(1) rotate(0deg);
 }
-#searchform-menu-item.active:before {
+#searchform-menu-item.active button:before {
   -webkit-transform: scale(0) rotate(-90deg);
   transform: scale(0) rotate(-90deg);
 }
-#searchform-menu-item:after {
+#searchform-menu-item button:after {
   content: "\f00d";
   -webkit-transform: scale(0) rotate(-90deg);
   transform: scale(0) rotate(-90deg);
 }
-#searchform-menu-item.active:after {
+#searchform-menu-item.active button:after {
   -webkit-transform: scale(1) rotate(0deg);
   transform: scale(1) rotate(0deg);
 }
@@ -558,17 +571,9 @@ nav {
     margin: 0;
     font-size: 0;
     list-style: none; }
-    nav menu li.helper {
+   nav menu li.helper {
       position: absolute;
-      top: 0;
-      left: 50%;
-      z-index: 1;
-      height: 100%;
-      width: 0px;
-      content: "";
-      background-color: #00bfaf;
-      -webkit-transition: all 0.5s cubic-bezier(0, 0.8, 0.07, 0.98);
-      transition: all 0.5s cubic-bezier(0, 0.8, 0.07, 0.98); }
+   }
     nav menu > li {
       position: relative;
       z-index: 5;
@@ -576,7 +581,7 @@ nav {
       display: inline-block; }
       nav menu > li:last-child a::after {
         display: none; }
-      nav menu > li > a, #searchform-menu-item {
+      nav menu > li > a, #searchform-menu-item button {
         position: relative;
         display: inline-block;
         font-size: 15px;
@@ -585,8 +590,7 @@ nav {
         text-transform: uppercase;
         line-height: 38px;
         padding: 0 25px;
-        -webkit-transition-property: color;
-        transition-property: color; }
+       }
         nav menu > li > a::after {
           position: absolute;
           top: 10px;
@@ -595,9 +599,12 @@ nav {
           height: 20px;
           width: 1px;
           background-color: #e5e5e5; }
-        nav menu > li > a:hover, nav menu > li > a:focus, nav menu > li > a:active {
+        nav menu > li > a:hover, nav menu > li > a:focus, nav menu > li > a:active,
+        #searchform-menu-item button:hover, #searchform-menu-item button:focus {
           text-decoration: none;
-          color: #ffffff; }
+          background-color: #fff;
+          border-bottom: 3px solid #00bfaf;
+        }
       nav menu > li.active > a, nav menu > li.current-menu-item > a {
         color: #ffffff; }
       nav menu > li.active.other-hov, nav menu > li.current-menu-item.other-hov {
