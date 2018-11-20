@@ -335,23 +335,59 @@ input[type="text"] {
   padding: 0 20px; }
 
 #searchform {
-  position: relative;
-  margin-bottom: 35px; }
-  #searchform::after {
-    display: block;
-    position: absolute;
-    content: "\f002";
-    font-family: FontAwesome;
-    top: 0;
-    right: 0;
-    height: 40px;
-    width: 40px;
-    text-align: center;
-    line-height: 40px;
-    color: #abadb3; }
-  #searchform input[type="text"] {
-    width: 100%; }
+  /*position: relative;*/
+  /*margin-bottom: 35px; }*/
+  position: absolute;
+  right: 0;
+  bottom: -5px;
+  display: none;
+}
+/*  #searchform::after {*/
+    /*display: block;*/
+    /*position: absolute;*/
+    /*content: "\f002";*/
+    /*font-family: FontAwesome;*/
+    /*top: 0;*/
+    /*right: 0;*/
+    /*height: 40px;*/
+    /*width: 40px;*/
+    /*text-align: center;*/
+    /*line-height: 40px;*/
+    /*color: #abadb3; }*/
+  /*#searchform input[type="text"] {*/
+    /*width: 100%; }*/
 
+#searchform-menu-item:before, #searchform-menu-item:after {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 5px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-family: FontAwesome;
+  line-height: 40px;
+  font-size: 22px;
+  transition: .33s all;
+}
+#searchform-menu-item:before {
+  content: "\f002";
+  -webkit-transform: scale(1) rotate(0deg);
+  transform: scale(1) rotate(0deg);
+}
+#searchform-menu-item.active:before {
+  -webkit-transform: scale(0) rotate(-90deg);
+  transform: scale(0) rotate(-90deg);
+}
+#searchform-menu-item:after {
+  content: "\f00d";
+  -webkit-transform: scale(0) rotate(-90deg);
+  transform: scale(0) rotate(-90deg);
+}
+#searchform-menu-item.active:after {
+  -webkit-transform: scale(1) rotate(0deg);
+  transform: scale(1) rotate(0deg);
+}
 img.alignleft, img.align-left {
   float: left;
   margin: 0 15px 10px 0; }
@@ -540,7 +576,7 @@ nav {
       display: inline-block; }
       nav menu > li:last-child a::after {
         display: none; }
-      nav menu > li > a {
+      nav menu > li > a, #searchform-menu-item {
         position: relative;
         display: inline-block;
         font-size: 15px;
