@@ -652,7 +652,7 @@ function add_search_form_header_menu($items, $args){
 				<form method="get" id="searchform" class="searchform" action="https://lazerdot.com.ua/">
 					<div>
 						<input type="text" name="s" id="s" placeholder="Поиск" />
-						<input type="submit" value="" />
+						<button type="submit"></button>
 					</div>
 				</form>
 			</li>';

@@ -91,7 +91,6 @@
                             <div class="col-md-4 number-item"><?php dynamic_sidebar( 'top-area-2' ); ?></div>
                             <div class="col-md-4 number-item"><?php dynamic_sidebar( 'top-area-3' ); ?></div>
                         </div>
-                        <div class = "search"><?php dynamic_sidebar( 'top-area-4' ); ?></div>
                     </div>
                     <div class="clearfix"></div>
                 </div>

@@ -127,6 +127,11 @@ $(function () {
         }
     });
 
+    //event handlers for displaying search menu
+    $('#searchform-menu-item .searchbutton').click(function(event) {
+        $('#searchform-menu-item').toggleClass('active');
+    });
+
 
     // Google Map
     if ($('#map').size() > 0)
