@@ -645,3 +645,18 @@ add_action( 'widgets_init', 'lazer_widgets_init' );
  * 1.8 - FIX: заметки, когда в рубрике нет записей
  * 1.7 - Улучшена работа с приоритетными таксономиями.
  */
+/*adding search form to header navigational menu */ 
+function add_search_form_header_menu($items, $args){
+	if ($args['theme_location'] === 'header-nav'){
+		$items.='<li id="searchform-menu-item">'.\
+				'<form method="get" id="searchform" class="searchform" action="https://lazerdot.com.ua/">'.\
+					'<div>'.\
+						'<input type="text" name="s" id="s" placeholder="Поиск" />'.\
+						'<input type="submit" value="" />'.\
+					'</div>'.\
+				'</form>'.\
+			'</li>';
+	}
+	return $items;
+}
+add_filter('wp_nav_menu_items', 'add_search_form_header_menu', 10, 2);
