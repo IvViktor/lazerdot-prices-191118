@@ -337,8 +337,7 @@ input[type="text"] {
 #searchform {
   position: absolute;
   right: 0;
-  top: 100%;
-  margin-top: 4px;
+  top: 45px;
   width: 270px;
   display: none;
   text-align: left;
@@ -359,7 +358,7 @@ input[type="text"] {
 #searchform button {
     position: absolute;
     right: 0;
-    padding: 0 25px;
+    padding: 0 26px;
     height: 100%;
     color: #00bfaf;
     background-color: transparent;
@@ -514,7 +513,6 @@ header {
       border-top: 30px solid #ffffff; }
   header .address {
     text-align: right;
-    text-transform: uppercase;
     font-style: italic;
     line-height: 1;
     margin: 22px 0;
@@ -642,15 +640,16 @@ nav {
           width: 1px;
           background-color: #e5e5e5; }
         nav menu > li > a:hover, nav menu > li > a:focus, nav menu > li > a:active,
-        #searchform-menu-item .searchbutton:hover, #searchform-menu-item .searchbutton:focus {
+        #searchform-menu-item .searchbutton:hover, #searchform-menu-item .searchbutton:focus,
+        nav menu > li.active > a, nav menu > li.current-menu-item > a {
           text-decoration: none;
           background-color: #fff;
           border-bottom: 3px solid #00bfaf;
         }
-      nav menu > li.active > a, nav menu > li.current-menu-item > a {
-        color: #ffffff; }
-      nav menu > li.active.other-hov, nav menu > li.current-menu-item.other-hov {
-        background-color: #e5e5e5; }
+      /*nav menu > li.active > a, nav menu > li.current-menu-item > a {*/
+        /*color: #ffffff; }*/
+      /*nav menu > li.active.other-hov, nav menu > li.current-menu-item.other-hov {*/
+        /*background-color: #e5e5e5; }*/
       nav menu > li > ul.sub-menu {
         opacity: 0;
         visibility: hidden;
@@ -1600,9 +1599,12 @@ header .address span {
   margin-top: -102px;
   margin-bottom: 50px;
 }
-li#menu-item-2905 a{
-  font-weight: 700;
-  color: rgba(0,102,102,1);
+li#menu-item-2905 a {
+  color: #fff;
+  background-color: #00bfaf;
+}
+li#menu-item-2905 a:after {
+  display: none;
 }
 /*li#menu-item-2905 a::after{
   background-color: rgba(0,191,175,1);
@@ -2137,9 +2139,6 @@ header .search #searchform {
 .phones > div {
   margin-right: 10px;
 }
-div.col-sm-9.contact-header-wrapper {
-    text-align: right;
-}
 
 @media (max-width: 532px) {
 header .phones {
@@ -2214,4 +2213,44 @@ header .phones {
 }
 .phone-numbers-wrapper .number-item a:hover {
   text-decoration: none;
+}
+.contact-header-wrapper {
+    text-align: right;
+}
+nav menu >li.blue-bg {
+
+}
+
+@media (max-width:767px){
+  .contact-header-wrapper {
+      text-align: center;
+  }
+  header .address:after {
+      display:none;
+  }
+  header .work-time {
+      margin-bottom: 20px;
+  }
+}
+@media (max-width: 991px){
+  .phone-numbers-wrapper .number-item:after, .phone-numbers-wrapper .number-item:before {
+      display: none;
+  }
+  #searchform-menu-item .searchbutton {
+    display: none;
+  }
+  #searchform {
+    position: relative;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    top: 0;
+  }
+  #searchform input[type="text"] {
+    line-height: 35px;
+    height: 35px;
+  }
+  #searchform div {
+    height: 35px;
+  }
 }

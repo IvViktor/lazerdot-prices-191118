@@ -78,7 +78,7 @@
                         <img src="<?php bloginfo('template_url'); ?>/img/logo-gold.png" alt="лазерная косметология Николаев"/>
                     </a>
                 </div>
-                <div class="col-sm-9 contact-header-wrapper" style="text-align: right;">
+                <div class="col-sm-9 contact-header-wrapper">
                     <div class="address">
                         Адрес клиники:  <span>Украина, г.Николаев, ул.Бузника 14</span>
                     </div>
