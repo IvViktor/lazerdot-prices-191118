@@ -342,6 +342,7 @@ input[type="text"] {
   width: 270px;
   display: none;
   text-align: left;
+  font-size: 14px;
 }
 #searchform div {
     display: block;
