@@ -646,7 +646,7 @@ add_action( 'widgets_init', 'lazer_widgets_init' );
  * 1.7 - Улучшена работа с приоритетными таксономиями.
  */
 /*adding search form to header navigational menu */ 
-function add_search_form_header_menu($items, $args){
+function lazerdot_add_search_form_header_menu($items, $args){
 	if ($args->theme_location == 'header-nav'){
 		$items.='<li id="searchform-menu-item"><button class="searchbutton">.</button>
 				<form method="get" id="searchform" class="searchform" action="https://lazerdot.com.ua/">
@@ -659,4 +659,10 @@ function add_search_form_header_menu($items, $args){
 	}
 	return $items;
 }
-add_filter('wp_nav_menu_items', 'add_search_form_header_menu', 10, 2);
+add_filter('wp_nav_menu_items', 'lazerdot_add_search_form_header_menu', 10, 2);
+
+//registering left sidebar menu for prices page
+function lazerdot_register_left_sidebar_menu(){
+	register_nav_menu('left_sidebar_menu', __('Left sidebar menu'));
+}
+add_action('init','lazerdot_register_left_sidebar_menu');
