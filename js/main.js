@@ -58,6 +58,7 @@ $(function () {
             $('header menu').removeClass('opened');
     });
     $(window).on("resize", function () {
+        if ($("#s").is(":focus") || $("#s").is(":hover")) return;
         $('header menu').removeClass('opened');
         $('.c-hamburger').removeClass('is-active');
         $('.sub-menu, menu .helper').removeAttr('style');
