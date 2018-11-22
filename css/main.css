@@ -557,12 +557,13 @@ header {
 #logo {
   position: relative; }
   #logo img {
-    width: 200px;
+    width: 180px;
     height: auto; }
   @media (min-width: 992px) {
     #logo {
-      top: -32px;
-      left: 40px; } }
+      top: -20px;
+      left: 40px;
+      position: absolute; } }
   @media (max-width: 767px) {
     #logo img {
       width: 150px; } }
@@ -845,7 +846,10 @@ HAMBURGER BUTTON
   transition: background 0.3s; }
   @media (min-width: 992px) {
     .c-hamburger {
-      display: none; } }
+      display: none; }
+    .contact-header-wrapper {
+      height: 100px;
+      } }
   @media (max-width: 767px) {
     .c-hamburger {
       right: 15px; } }
@@ -1389,6 +1393,7 @@ footer{
     border-top: 1px solid rgba(255, 255, 255, 0.5); }
 header .address span {
     color: #000;
+    font-weight: 400;
 }
 .error404 #content a{
 	font-style:italic;
@@ -2192,6 +2197,9 @@ header .phones {
 .phone-numbers-wrapper .number-item {
   text-align: center;
 }
+.phone-numbers-wrapper .number-item a span {
+    color: #00bfaf;
+}
 .phone-numbers-wrapper .number-item:after {
   content: url(/wp-content/themes/zlata/img/green-dot.png);
   position: absolute;
@@ -2229,7 +2237,8 @@ header .phones {
     text-transform: uppercase;
 }
 .prices-content .content-data {
-    margin: 60px 0 80px;
+    margin-top: 60px;
+    margin-bottom: 80px;
 }
 .prices-sidebar-header {
     text-transform: uppercase;
@@ -2247,6 +2256,7 @@ header .phones {
     left: 0;
     top:0;
     content: '\f0a3';
+    font-weight: 400;
     font-size: 12px;
     line-height: 22px;
     color: #00bfaf;
@@ -2265,6 +2275,7 @@ header .phones {
     line-height: 55px;
     background-color: #f5f5f5;
     font-size: 15px;
+    color: #4c5059;
 }
 .side-menu li.current-menu-item a {
     background-color: #ffffff;
@@ -2285,6 +2296,7 @@ header .phones {
     font-size: 18px;
     font-family: "Font Awesome";
     content: '\f078';
+    font-weight: 400;
 }
 
 .side-menu > li > ul.sub-menu {
