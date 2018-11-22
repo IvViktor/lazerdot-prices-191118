@@ -6,7 +6,7 @@
 
 <?php get_header(); ?>
 
-<div id="content">
+<div id="content" class="prices-content">
 
     <h1 class="page-title"><?php the_title(); ?></h1>
     

@@ -2217,9 +2217,71 @@ header .phones {
 .contact-header-wrapper {
     text-align: right;
 }
-nav menu >li.blue-bg {
-
+.prices-content {
+    color: #4c5059;
+    font-family: "Roboto";
+    font-weight: 300;
 }
+.prices-content .page-title {
+    font-size: 30px;
+    font-family: "Garamond";
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.prices-sidebar-header {
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 18px;
+    font-size: 18px;
+    font-family: "Roboto";
+    padding-bottom: 4px;
+    position: relative;
+    border-bottom: 1px solid #00bfaf;
+    margin-bottom: 20px;
+}
+.prices-sidebar-header:before {
+    position: absolute;
+    left: 0;
+    top:0;
+    content: '\f0a3';
+    font-size: 12px;
+    line-height: 22px;
+    color: #00bfaf;
+    font-family: "Font Awesome";
+}
+ul.side-menu li {
+    display: block;
+    position: relative;
+    margin-bottom: 4px;
+    transition: all 0.33s ease;
+}
+ul.side-menu li a {
+    display: block;
+    width: 100%;
+    padding: 0 20px;
+    line-height: 55px;
+    background-color: #f5f5f5;
+    font-size: 15px;
+}
+ul.side-menu li.current-menu-item a {
+    background-color: #ffffff;
+    border-bottom: 3px solid #00bfaf;
+}
+ul.side-menu li a:hover {
+    background-color: #00bfaf;
+    color: #ffffff;
+}
+ul.side-menu li.menu-item-has-children a:after {
+    position: absolute;
+    display: block;
+    right: 20px;
+    top: 0px;
+    line-height: 55px;
+    font-size: 18px;
+    font-family: "Font Awesome";
+    content: '\f078';
+}
+
 
 @media (max-width:767px){
   .contact-header-wrapper {
