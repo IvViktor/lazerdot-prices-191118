@@ -2263,7 +2263,7 @@ header .phones {
     font-size: 12px;
     line-height: 22px;
     color: #00bfaf;
-    font-family: "Font Awesome";
+    font-family: "Font Awesome 5 Free";
 }
 .side-menu li {
     display: block;
@@ -2297,7 +2297,7 @@ header .phones {
     top: 0px;
     line-height: 55px;
     font-size: 18px;
-    font-family: "Font Awesome";
+    font-family: "Font Awesome 5 Free";
     content: '\f078';
     font-weight: 400;
 }
