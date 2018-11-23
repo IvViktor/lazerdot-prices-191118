@@ -231,8 +231,7 @@ ul {
   list-style-position: inside; }
 
 .table {
-  width: 80%;
-  margin: auto;
+  width: 100%;
  }
   .table th, .table {
     border-bottom: 1px solid #abadb3;
@@ -2223,7 +2222,7 @@ header .phones {
   color: #4c5059;
 }
 .phone-numbers-wrapper .number-item a:hover {
-  text-decoration: none;
+  /*text-decoration: none;*/
 }
 .contact-header-wrapper {
     text-align: right;
@@ -2259,9 +2258,9 @@ header .phones {
     left: 0;
     top:0;
     content: '\f0a3';
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 22px;
+    font-weight: 900;
+    font-size: 10px;
+    line-height: 18px;
     color: #00bfaf;
     font-family: "Font Awesome 5 Free";
 }
@@ -2272,10 +2271,10 @@ header .phones {
     transition: all 0.33s ease;
 }
 .side-menu li a {
+    position: relative;
     display: block;
     width: 100%;
-    padding: 0 20px;
-    line-height: 55px;
+    padding: 20px 30px 20px 20px;
     background-color: #f5f5f5;
     font-size: 15px;
     color: #4c5059;
@@ -2293,13 +2292,13 @@ header .phones {
 .side-menu > li.menu-item-has-children > a:after {
     position: absolute;
     display: block;
-    right: 20px;
-    top: 0px;
-    line-height: 55px;
-    font-size: 18px;
+    right: 15px;
+    top: 50%;
+    margin-top: -10px;
+    font-size: 14px;
     font-family: "Font Awesome 5 Free";
     content: '\f078';
-    font-weight: 400;
+    font-weight: 900;
 }
 
 .side-menu > li > ul.sub-menu {
@@ -2310,8 +2309,7 @@ header .phones {
     margin-bottom: 2px;
 }
 .side-menu .sub-menu > li > a {
-    padding: 0 10px;
-    line-height: 40px;
+    padding: 14px 10px;
     font-size: 14px;
 }
 .side-menu > li.menu-item-has-children:hover > ul.sub-menu,
@@ -2320,6 +2318,8 @@ header .phones {
 }
 .prices-content .content-intro {
     margin-bottom: 30px;
+    margin-top: 10px;
+    text-align: justify;
 }
 .prices-content a.plate-item-link {
     display: block;
@@ -2369,7 +2369,7 @@ header .phones {
     width: 100%;
 }
 .prices-content a.plate-item-link .plate-item-text {
-    line-height: 70px;
+    padding: 20px;
     text-transform: uppercase;
     text-align: center;
 }
@@ -2406,4 +2406,15 @@ header .phones {
   #searchform div {
     height: 35px;
   }
+}
+@media (min-width: 992px){
+  .collapseomatic {
+    width: 80%;
+    margin: auto auto 5px;
+  }
+  .table {
+    width: 80%;
+    margin: auto;
+  }
+
 }

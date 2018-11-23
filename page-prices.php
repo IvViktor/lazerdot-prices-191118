@@ -31,7 +31,7 @@
             </div>
             <div class="col-md-9">
                  <div class="row">
-                     <div class="col-12 content-intro">
+                     <div class="col-xs-12 content-intro">
                          <?php the_content();?>
                      </div>
                      <?php 
@@ -47,7 +47,7 @@
                           $plate_image = get_field($plate_item_data[0]);
                           $plate_item_text = get_field($plate_item_data[1]);
                           $plate_item_target = get_field($plate_item_data[2]);
-                          if(empty($plate_image) || empty($plate_item_text) || empty($plate_item_target)) continue;
+                          //if(empty($plate_image) || empty($plate_item_text) || empty($plate_item_target)) continue;
                       ?>
                            <div class="col-md-4 col-sm-6">
                               <a class="plate-item-link" href="<?php echo $plate_item_target; ?>">
