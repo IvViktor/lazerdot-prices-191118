@@ -88,6 +88,10 @@ $(function () {
         $this.css('background-image', img);
         $('img', this).remove();
     });
+    $('ul.side-menu > li.menu-item-has-children').click(function(event){
+        event.preventDefault();
+        $(this).toggleClass('active');
+    });
 
 
     (function () {

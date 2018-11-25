@@ -41,7 +41,10 @@
                             3 => array('plate_image_3','plate_item_text_3','plate_item_target_3'),
                             4 => array('plate_image_4','plate_item_text_4','plate_item_target_4'),
                             5 => array('plate_image_5','plate_item_text_5','plate_item_target_5'),
-                            6 => array('plate_image_6','plate_item_text_6','plate_item_target_6')
+                            6 => array('plate_image_6','plate_item_text_6','plate_item_target_6'),
+                            7 => array('plate_image_7','plate_item_text_7','plate_item_target_7'),
+                            8 => array('plate_image_8','plate_item_text_8','plate_item_target_8'),
+                            9 => array('plate_image_9','plate_item_text_9','plate_item_target_9')
                             );
                         foreach ($plate_items_keys as $plate_item_number => $plate_item_data):
                           $plate_image = get_field($plate_item_data[0]);
