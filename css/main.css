@@ -2321,6 +2321,31 @@ header .phones {
     margin-bottom: 30px;
     text-align: justify;
 }
+.prices-content .content-intro a.back-link {
+    display: block;
+    padding: 20px 5px 10px 5px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 16px;
+    font-family: "Roboto";
+    position: relative;
+    color: #4c5059;
+    border-bottom: 1px solid #eee;
+}
+.prices-content .content-intro a.back-link:before {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    font-family: "Font Awesome 5 Free";
+    content: "";
+}
+.prices-content .content-intro a.back-link:hover {
+    border-bottom: 1px solid  #00bfaf;
+}
+.prices-content .content-intro a.back-link:hover:before {
+    color: #00bfaf;
+}
+
 .prices-content a.plate-item-link {
     display: block;
     width: 100%;
