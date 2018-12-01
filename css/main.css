@@ -2322,8 +2322,8 @@ header .phones {
     text-align: justify;
 }
 .prices-content .content-intro a.back-link {
-    display: block;
-    padding: 20px 5px 10px 5px;
+    padding: 5px 10px 5px 20px;
+    text-decoration: none;
     text-transform: uppercase;
     text-align: center;
     font-size: 16px;
@@ -2337,7 +2337,9 @@ header .phones {
     left: 0;
     top: 5px;
     font-family: "Font Awesome 5 Free";
-    content: "";
+    content: "\f060";
+    font-weight: 900;
+    color: #A7ADBB;
 }
 .prices-content .content-intro a.back-link:hover {
     border-bottom: 1px solid  #00bfaf;

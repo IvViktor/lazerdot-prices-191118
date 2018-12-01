@@ -14,7 +14,17 @@
     
     <div class="container content-data">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-9 col-md-push-3">
+                 <div class="row">
+                     <div class="col-xs-12 content-intro">
+                         <a href="https://lazerdot.com.ua/praysy/" class="back-link">Назад к списку цен</a>
+                     </div>
+                     <div class="col-xs-12 prices-content">
+						<?php the_content();?>
+                     </div>
+                 </div>
+            </div>
+            <div class="col-md-3 col-md-pull-9">
                <div class="prices-sidebar-header">
                     Прайсы на услуги
                </div>
@@ -28,16 +38,6 @@
                         )
                     );
                ?>
-            </div>
-            <div class="col-md-9">
-                 <div class="row">
-                     <div class="col-xs-12 content-intro">
-                         <a href="https://lazerdot.com.ua/praysy/" class="back-link">Назад к списку цен</a>
-                     </div>
-                     <div class="col-xs-12 prices-content">
-						<?php the_content();?>
-                     </div>
-                 </div>
             </div>
         </div>
     </div>
