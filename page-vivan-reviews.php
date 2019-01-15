@@ -4,6 +4,24 @@
  */
 ?>
 
+<?php
+$inform_message_class_name = '';
+$inform_message_text = '';
+function renderer_helper($is_error, $message_text){
+        if ($is_error){
+                $inform_message_class_name = 'error-message';
+                $inform_message_text = $message_text . __('Please try again.');
+        } else {
+                $inform_message_class_name = 'success-message';
+                $inform_message_text = $message_text;
+        }
+}
+
+//check if the request type is POST than call the plugin function	
+if($_SERVER['REQUEST_METHOD'] === 'POST') $vivan_reviews_add_review($_POST, $renderer_helper);
+
+?>
+
 <?php get_header(); ?>
 
 <div id="content">
