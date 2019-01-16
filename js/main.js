@@ -125,10 +125,12 @@ $(function () {
         $(this).toggleClass('show');
         if ($(this).hasClass('show')) {
             $('.katb_input_style').slideDown(300);
+            $('#reviews-form').slideDown(300);
             $(this).html('<i class="fa fa-times" aria-hidden="true"></i> Закрыть');
         }
         else {
             $('.katb_input_style').slideUp(300);
+            $('#reviews-form').slideUp(300);
             $(this).html('<i class="fa fa-pencil-square-o" aria-hidden="true"></i> Оставить свой отзыв');
         }
     });
