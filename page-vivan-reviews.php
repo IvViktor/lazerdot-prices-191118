@@ -19,8 +19,8 @@ function vivan_reviews_renderer_helper($is_error, $message_text){
 }
 
 //check if the request type is POST than call the plugin function	
-if($_SERVER['REQUEST_METHOD'] === 'POST') $vivan_reviews_add_review($_POST, $vivan_reviews_renderer_helper);
-
+if($_SERVER['REQUEST_METHOD'] === 'POST' && function_exists('vivan_reviews_add_review')) 
+	vivan_reviews_add_review($_POST, 'vivan_reviews_renderer_helper');
 ?>
 
 <?php get_header(); ?>
@@ -73,7 +73,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') $vivan_reviews_add_review($_POST, $viv
 	<div class="row">
 		<div class="col-md-12">
 			<div class="reviews-pagination">
-				<?php 	$vivan_reviews_pagination_params(
+				<?php 	$vivan_reviews_pagination_params = array(
 						'total' => $vivan_reviews_query -> $max_num_pages,
 						'current' => $vivan_reviews_query_params['paged'],
 						'mid_size' => 1,
