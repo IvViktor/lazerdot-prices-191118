@@ -77,8 +77,8 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') $vivan_reviews_add_review($_POST, $viv
 						'total' => $vivan_reviews_query -> $max_num_pages,
 						'current' => $vivan_reviews_query_params['paged'],
 						'mid_size' => 1,
-						'prev_text' => '<i class="fa fa-chevron-left"></i>',
-						'next_text' => '<i class="fa fa-chevron-right"></i>',
+						'prev_text' => '<i class="fas fa-chevron-left"></i>',
+						'next_text' => '<i class="fas fa-chevron-right"></i>',
 						'type' => 'list'
 					);
 					echo paginate_links($vivan_reviews_pagination_params); 
