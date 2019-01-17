@@ -1313,12 +1313,12 @@ PAGE
 .page-template-page-reviews #content article .article-footer time {
   font-style: italic;
   margin-left: 5px; }
-.page-template-page-reviews #show-review-form {
+#show-review-form {
   display: inline-block;
   margin-bottom: 55px;
   text-decoration: none !important;
   color: #00bfaf; }
-.page-template-page-reviews #show-review-form.show {
+#show-review-form.show {
   color: #abadb3; }
 .page-template-page-reviews .katb_input_style {
   margin-bottom: 40px; }
@@ -2408,7 +2408,61 @@ li#menu-item-2905 a:after {
   text-align: center;
   height: 70px;
 }
-
+.page-template-page-vivan-reviews .page-title {
+  margin-bottom: 15px;
+}
+.reviews-post-info {
+  line-height: 25px;
+    margin-bottom: 5px;
+    font-family: 'Roboto',sans-serif;
+}
+.reviews-post-info > div {
+  display: inline-block;
+  border-bottom: 1px solid;
+}
+.reviews-post-info > div.error-message {
+  border-color: #ff8080;
+}
+.reviews-post-info > div.success-message {
+  border-color: #00bfaf;
+}
+#show-review-form.show {
+  margin-bottom: 15px;
+}
+#reviews-form {
+  display: block;
+  margin-bottom: 30px;
+}
+#reviews-form input, #reviews-form textarea,
+#reviews-form .g-recaptcha, #reviews-form .submit-wrapper {
+    display: block;
+    max-width: 480px;
+    width: 100%;
+    margin: 10px auto;
+}
+#reviews-form input, #reviews-form textarea,
+#reviews-form .g-recaptcha {
+    border-radius: 0;
+    min-height: 40px;
+    padding: 5px 10px;
+}
+#reviews-form .g-recaptcha {
+  padding: 0;
+  margin-bottom: 20px;
+}
+#reviews-form input[type="submit"]{
+    display: block;
+    width: auto;
+    margin: 0;
+    text-transform: uppercase;
+    border: 1px solid #00bfaf;
+    color: #00bfaf;
+    background-color: transparent;
+}
+#reviews-form input[type="submit"]:hover, #reviews-form input[type="submit"]:focus {
+    background-color: #00bfaf;
+    color: #fff;
+} 
 @media (max-width:767px){
   .contact-header-wrapper {
     text-align: center;
