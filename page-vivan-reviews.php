@@ -46,7 +46,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && function_exists('vivan_reviews_add_r
         			<input type="hidden" name="_vivan-reviews-visitor-review" value="_new-review" />
         			<input type="text" name="vivan_reviews_visitor_name" placeholder="Введите свое имя" required />
         			<input type="email" name="vivan_reviews_visitor_email" placeholder="Введите свой email" required />
-        			<textarea name="vivan_reviews_visitor_review" rows="4" placeholder="Оставьте отзыв тут" required></textarea>
+        			<textarea name="vivan_reviews_visitor_review" rows="8" placeholder="Оставьте отзыв тут" required></textarea>
         			<div class="g-recaptcha" data-sitekey="6LfJI4kUAAAAAJC17ITIMUYwwFVTxfU_t8mRG27K" ></div>
         			<div class="submit-wrapper">
                         <input type="submit" value="Оставить отзыв" />
@@ -59,19 +59,22 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && function_exists('vivan_reviews_add_r
         		'post_type' => 'vivan_visitor_review',
         		'posts_per_page' => 10
         	      );
-        	      $vivan_reviews_query_params['paged'] = (get_query_var('page')) ? get_query_var('page') : 1;
+        	      $vivan_reviews_query_params['paged'] = (get_query_var('paged')) ? get_query_var('paged') : 1;
         	      $vivan_reviews_query = new WP_Query($vivan_reviews_query_params);
         	      if ($vivan_reviews_query -> have_posts()):
         		while($vivan_reviews_query -> have_posts()): $vivan_reviews_query -> the_post();
         	?>
                 <div class="col-md-12">
                     <div class="reviews-content">
-    			<div class="visitor-name">
-    				<?php echo get_post_meta( get_the_ID(), 'visitor_name', true ); ?>
-    			</div>
-    			<div class="review-text">
-    				<?php the_content(); ?>
-    			</div>
+            			<div class="visitor-name">
+            				<?php echo get_post_meta( get_the_ID(), 'visitor_name', true ); ?>
+            			</div>
+            			<div class="review-text">
+            				<?php the_content(); ?>
+            			</div>
+                        <div class="article-separator">
+                            <span class="rhombus"></span>
+                        </div>
                     </div>
                 </div>
 	       <?php endwhile; endif; ?>
@@ -80,11 +83,11 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && function_exists('vivan_reviews_add_r
     		<div class="col-md-12">
     			<div class="reviews-pagination">
     				<?php 	$vivan_reviews_pagination_params = array(
-    						'total' => $vivan_reviews_query -> $max_num_pages,
+    						'total' => $vivan_reviews_query -> max_num_pages,
     						'current' => $vivan_reviews_query_params['paged'],
     						'mid_size' => 1,
-    						'prev_text' => '<i class="fas fa-chevron-left"></i>',
-    						'next_text' => '<i class="fas fa-chevron-right"></i>',
+    						'prev_text' => '<i class="fa fa-chevron-left"></i>',
+    						'next_text' => '<i class="fa fa-chevron-right"></i>',
     						'type' => 'list'
     					);
     					echo paginate_links($vivan_reviews_pagination_params); 
