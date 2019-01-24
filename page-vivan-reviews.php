@@ -57,6 +57,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && function_exists('vivan_reviews_add_r
         <div class="row">
         	<?php $vivan_reviews_query_params = array(
         		'post_type' => 'vivan_visitor_review',
+                'post_status' => array('publish', 'pending'),
         		'posts_per_page' => 10
         	      );
         	      $vivan_reviews_query_params['paged'] = (get_query_var('paged')) ? get_query_var('paged') : 1;
