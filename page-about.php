@@ -10,10 +10,10 @@
 
     <div class="container">
        <?php while (have_posts()) { the_post(); ?>
-            <h1 class="page-title"><?php the_title(); ?></h1>
+            <h1 class="page-title section-header text-center"><?php the_title(); ?></h1>
 	   <?php } ?>
-	   <div id="owl-about" class="owl-carousel">
-			<div data-hash="about-s-1">
+	   <div id="about-slider">
+			<div class="about-slider-item">
 			   <div class="row">
 					<div class="col-md-6">
 						<h2 class="about-slider-h">Наша клиника</h2>
@@ -26,7 +26,7 @@
 					</div>
 			   </div>
 			</div>
-			<div data-hash="about-s-2">
+			<div class="about-slider-item">
 			   <div class="row">
 					<div class="col-md-6">
 						<h2 class="about-slider-h">Гинекология</h2>
@@ -38,8 +38,8 @@
 					</div>
 			   </div>
 			</div>
-			<div>
-			   <div class="row" data-hash="about-s-3">
+			<div class="about-slider-item">
+			   <div class="row" >
 					<div class="col-md-6">
 						<h2 class="about-slider-h">Пластическая хирургия</h2>
 						<p class="about-slider-p">
@@ -51,8 +51,8 @@
 					</div>
 			   </div>
 			</div>
-			<div>
-			   <div class="row" data-hash="about-s-4">
+			<div class="about-slider-item">
+			   <div class="row">
 					<div class="col-md-6">
 						<h2 class="about-slider-h">Комната отдыха</h2>
 						<p class="about-slider-p">
@@ -64,8 +64,8 @@
 					</div>
 			   </div>
 			</div>
-			<div>
-			   <div class="row" data-hash="about-s-5">
+			<div class="about-slider-item">
+			   <div class="row">
 					<div class="col-md-6">
 						<h2 class="about-slider-h">Косметология</h2>
 						<p class="about-slider-p">
@@ -77,90 +77,81 @@
 					</div>
 			   </div>
 			</div>
-	   </div>
-	   <div class="row owl-about-nav">
-			<div class="col-md-6">
-				<a href="#about-s-1" class="about-s-btn">
-					<div class="over"></div>
-					<img src="<?php bloginfo('template_url'); ?>/img/about-s-btn1.png" />
-				</a>
-				<a href="#about-s-2" class="about-s-btn">
-					<div class="over"></div>
-					<img src="<?php bloginfo('template_url'); ?>/img/about-s-btn2.png" />
+		</div>
+		<div class="row slider-nav">
+				<div class="col-md-6">
+					<a href="#about-s-1" class="about-s-btn">
+						<img src="<?php bloginfo('template_url'); ?>/img/about-s-btn1.png" />
+					</a>
+					<a href="#about-s-2" class="about-s-btn">
+						<img src="<?php bloginfo('template_url'); ?>/img/about-s-btn2.png" />
 
-				</a>
-				<a href="#about-s-3" class="about-s-btn">
-					<div class="over"></div>
-					<img src="<?php bloginfo('template_url'); ?>/img/about-s-btn3.png" />
-				</a>
-				<a href="#about-s-4" class="about-s-btn">
-					<div class="over"></div>
-					<img src="<?php bloginfo('template_url'); ?>/img/about-s-btn4.png" />
-				</a>
-				<a href="#about-s-5" class="about-s-btn">
-					<div class="over"></div>
-					<img src="<?php bloginfo('template_url'); ?>/img/about-s-btn5.png" />
-				</a>
-			</div>
-	   </div>
+					</a>
+					<a href="#about-s-3" class="about-s-btn">
+						<img src="<?php bloginfo('template_url'); ?>/img/about-s-btn3.png" />
+					</a>
+					<a href="#about-s-4" class="about-s-btn">
+						<img src="<?php bloginfo('template_url'); ?>/img/about-s-btn4.png" />
+					</a>
+					<a href="#about-s-5" class="about-s-btn">
+						<img src="<?php bloginfo('template_url'); ?>/img/about-s-btn5.png" />
+					</a>
+				</div>
+		</div>
     </div>
 
-	<div class="advantage-box">
+	<div class="advantage-section">
 		<div class="container">
-			<div class="row">
-				<h2 class="advantage-h2">ПРЕИМУЩЕСТВА КЛИНИКИ</h2>
-			<div class="row">
-				<div class="col-md-6">
-					<div class="advantage-itm-l">
-						<h2 class="advantage-h3">Сертифицированные профессионалы</h2>
-						<p class="advantage-p">
-							Доктора клиники являются настоящими профессионалами своего дела. У нас работают ведущие врачи Николаева. Но это не мешает им постоянно повышать свою квалификацию, обучаясь новых техникам и методикам.
-						</p>
+			<h2 class="advantage-h2 section-header text-center">ПРЕИМУЩЕСТВА КЛИНИКИ</h2>
+			<div class="advantages-wrapper">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="advantage-item">
+							<h3 class="advantage-h3">Сертифицированные профессионалы</h3>
+							<p class="advantage-p">
+								Доктора клиники являются настоящими профессионалами своего дела. У нас работают ведущие врачи Николаева. Но это не мешает им постоянно повышать свою квалификацию, обучаясь новых техникам и методикам.
+							</p>
+						</div>
 					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="advantage-itm-r">
-						<h2 class="advantage-h3">Широкий спектр услуг</h2>
-						<p class="advantage-p">
-							Златадерма - это безусловный лидер по предоставлению огромного множества услуг в сфере косметологи (аппаратной, инъекционной и эстетической), гинекологии и пластической хирургии (в том числе и интимной пластике).
-						</p>
+					<div class="col-md-6">
+						<div class="advantage-item">
+							<h3 class="advantage-h3">Широкий спектр услуг</h3>
+							<p class="advantage-p">
+								Златадерма - это безусловный лидер по предоставлению огромного множества услуг в сфере косметологи (аппаратной, инъекционной и эстетической), гинекологии и пластической хирургии (в том числе и интимной пластике).
+							</p>
+						</div>
 					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6">
-					<div class="advantage-itm-l">
-						<h2 class="advantage-h3">Лояльные цены</h2>
-						<p class="advantage-p">
-							В условиях слабой экономики в стране, мы предоставляем конкурентные цены, доступны каждому в той или иной мере. Также вы всегда найдете выгодные акции в Златадерме, которые делают наши услуги еще более доступными.
-						</p>
+					<div class="col-md-6">
+						<div class="advantage-item">
+							<h3 class="advantage-h3">Лояльные цены</h3>
+							<p class="advantage-p">
+								В условиях слабой экономики в стране, мы предоставляем конкурентные цены, доступны каждому в той или иной мере. Также вы всегда найдете выгодные акции в Златадерме, которые делают наши услуги еще более доступными.
+							</p>
+						</div>
 					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="advantage-itm-r">
-						<h2 class="advantage-h3">Оборудование</h2>
-						<p class="advantage-p">
-							В нашей клинике предоставлено оборудование мирового класса. Ни в одной другой клинике в Николаеве и в Южному регионе вы не найдете оборудования столь высокого уровня, как наше. Вы будете в восторге от нашего оборудования!
-						</p>
+					<div class="col-md-6">
+						<div class="advantage-item">
+							<h3 class="advantage-h3">Оборудование</h3>
+							<p class="advantage-p">
+								В нашей клинике предоставлено оборудование мирового класса. Ни в одной другой клинике в Николаеве и в Южному регионе вы не найдете оборудования столь высокого уровня, как наше. Вы будете в восторге от нашего оборудования!
+							</p>
+						</div>
 					</div>
-				</div>
-			</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6">
-					<div class="advantage-itm-l">
-						<h2 class="advantage-h3">Удобное месторасположение</h2>
-						<p class="advantage-p">
-							Мы находимся в таком месте, куда легко добраться из любой точки города. В то же время, мы не в самом центре, что позволяет посещать клинику так сказать "без лишних глаз".
-						</p>
+					<div class="col-md-6">
+						<div class="advantage-item">
+							<h3 class="advantage-h3">Удобное месторасположение</h3>
+							<p class="advantage-p">
+								Мы находимся в таком месте, куда легко добраться из любой точки города. В то же время, мы не в самом центре, что позволяет посещать клинику так сказать "без лишних глаз".
+							</p>
+						</div>
 					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="advantage-itm-r">
-						<h2 class="advantage-h3">Стерилизация инструмента</h2>
-						<p class="advantage-p">
-							Последнее, но не менее важное - мы уделяем огромное внимание стерилизации наших инструментов. Нигде больше вы не найдете такой подход к такой серьезной процедуре.
-						</p>
+					<div class="col-md-6">
+						<div class="advantage-item">
+							<h3 class="advantage-h3">Стерилизация инструмента</h3>
+							<p class="advantage-p">
+								Последнее, но не менее важное - мы уделяем огромное внимание стерилизации наших инструментов. Нигде больше вы не найдете такой подход к такой серьезной процедуре.
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -170,7 +161,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h2 class="about-you-h2">O BAC</h2>
+					<h2 class="about-you-h2 section-header">O BAC <span class="rhombus"></span></h2>
 					<p class="about-you-p">
 					Рассказ о нашей клинике мы, однозначно, должны начать с вас – наших пациентов. Если вы приходите к нам, либо только планируете записаться, это значит, что вы человек, который заботится о своем здоровье и красоте. Вы знаете, что мудрые люди, в первую очередь, инвестируют в свое здоровье и внешность. А мы делаем все возможное, чтоб реализовать ваши пожелания и помочь вам, нашим пациентам, осуществить мечты.
 					</p>
@@ -180,7 +171,7 @@
 	</div>
 	<div class="why-box">
 		<div class="container">
-			<h2 class="why-h2">Почему выбирают Златадерму</h2>
+			<h2 class="why-h2 section-header">Почему выбирают Златадерму <span class="rhombus"></span></h2>
 			<div class="row">
 				<div class="col-md-3">
 					<h3 class="why-h3 why-h3-1">Всегда <span>лояльные</span> цены</h3>
@@ -199,7 +190,7 @@
 	</div>
 	<div class="us-box">
 		<div class="container">
-			<h2 class="us-h2">О нас</h2>
+			<h2 class="us-h2 section-header">О нас <span class="rhombus"></span></h2>
 			<div class="row">
 				<div class="col-md-12">
 					<img class="img-responsive pull-right" src="<?php bloginfo('template_url'); ?>/img/lv.jpeg" alt="косметологическая клиника Николаев" />
@@ -241,7 +232,7 @@
 	</div>
 	<div class="acardeon-box">
 		<div class="container">
-			<h2 class="acardeon-h2">наши ведущие врачи</h2>
+			<h2 class="acardeon-h2 section-header">наши ведущие врачи <span class="rhombus"></span></h2>
 			<div class="row">
 					<div id="accordion">
 
