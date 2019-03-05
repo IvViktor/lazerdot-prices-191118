@@ -2459,6 +2459,7 @@ li#menu-item-2905 a:after {
   font-weight: 300;
   color: #4c5059;
   font-size: 14px;
+  text-align: justify;
 }
 .about-content .section-header {
   font-size: 30px;
@@ -2501,6 +2502,9 @@ li#menu-item-2905 a:after {
   margin-top: 70px;
   padding: 80px 0;
   color: #ffffff;
+}
+.advantage-section .section-header {
+  margin-bottom: 55px;
 }
 .advantage-section .advantages-items {
   border: 1px solid #fff;
@@ -2568,4 +2572,181 @@ li#menu-item-2905 a:after {
 .about-you-section {
   background-color: #f5f5f5;
   padding: 50px 0;
+  margin-bottom: 70px;
+}
+.about-you-section .section-header,
+.why-section .section-header,
+.us-section .section-header,
+.doctors-section .section-header {
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.why-section {
+  margin-bottom: 80px;
+}
+.why-section .section-header {
+  margin-bottom: 70px;
+}
+.why-section .why-h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.why-section .why-h3 span {
+  font-weight: 700;
+  color: #00bfaf;
+}
+.why-section .why-icon {
+  margin: 0 auto 50px;
+  width: 130px;
+  height: 130px;
+  position: relative;
+}
+.why-icon:before, .why-icon:after {
+  position: absolute;
+  top:0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.why-icon:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 150px;
+  font-weight: 900;
+  content: '\f0a3';
+  text-align: center;
+  color: #00bfaf;
+}
+.why-icon.icon-dollar:after {
+  content: "$";
+  font-family: 'EB Garamond',serif;
+  line-height: 130px;
+  text-align: center;
+  color: #fff;
+  font-size: 70px;
+}
+.why-icon.icon-cert:after, .why-icon.icon-reputation:after {
+  content: "";
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+.why-icon.icon-cert:after {
+  background-image: url(../img/css-aux-img/certificate.png);
+}
+.why-icon.icon-reputation:after {
+  background-image: url(../img/css-aux-img/reputation.png);
+}
+.why-icon.icon-smile:after {
+  content: '\f118';
+  font-weight: 400;
+  font-family: "Font Awesome 5 Free";
+  font-size: 60px;
+  line-height: 130px;
+  text-align: center;
+  color: #fff;
+}
+.us-section {
+  margin-bottom: 65px;
+}
+.us-section .section-header {
+  margin-bottom: 40px;
+}
+.us-section p {
+  margin-bottom: 20px;
+}
+.us-section .us-slogan {
+  font-size: 18px;
+  font-weight: 700;
+}
+.us-section .us-sign img {
+  margin: auto;
+}
+.certificate-section {
+  padding: 50px 0;
+}
+.certificate-section .container {
+  border-top: 1px solid #e5e5e5;
+}
+.certificate-section img {
+  margin: auto;
+}
+.doctors-section {
+  padding: 70px 0;
+  background-color: #f5f5f5;
+}
+.doctors-section .section-header {
+  margin-bottom: 50px;
+}
+.doctor-item {
+  margin-bottom: 20px;
+}
+.doctor-item .doctor-intro {
+  padding: 20px 0;
+  position: relative;
+  outline: 1px solid #e5e5e5;
+}
+.doctor-item .doctor-intro.active, .doctor-item .doctor-intro:hover {
+  background-color: #fff;
+  outline: none;
+}
+.doctor-item .doctor-intro:hover {
+  cursor: pointer;
+}
+.doctor-intro:after {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  margin-top: -11px;
+  content: "+";
+  font-size: 16px;
+  line-height: 22px;
+  color: #00bfaf;
+}
+.doctor-intro.active:after {
+  content: "-";
+  color: #4c5059;
+}
+.doctor-intro img {
+  margin: 0 auto 15px;
+}
+.doctor-intro .name {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.doctor-item .doctor-descr {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.doctor-descr .education {
+  margin-bottom: 30px;
+}
+.doctor-descr h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.doctor-descr .exper-certs-block .col-md-4 {
+  margin-bottom: 30px;
+}
+.doctor-item ul {
+  list-style: none;
+}
+.doctor-item ul li {
+  text-indent: 25px;
+  position: relative;
+  text-align: justify;
+}
+.doctor-item ul li:before {
+  position: absolute;
+  left: 0;
+  font-size: 12px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: '\f0a3';
+  color: #00bfaf;
 }
