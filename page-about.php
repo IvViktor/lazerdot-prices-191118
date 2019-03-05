@@ -103,7 +103,11 @@
 	<div class="advantage-section">
 		<div class="container">
 			<h2 class="advantage-h2 section-header text-center">ПРЕИМУЩЕСТВА КЛИНИКИ</h2>
-			<div class="advantages-wrapper">
+			<div class="advantages-items">
+				<div class="corner-block corner-top-left"></div>
+				<div class="corner-block corner-top-right"></div>
+				<div class="corner-block corner-bottom-left"></div>
+				<div class="corner-block corner-bottom-right"></div>
 				<div class="row">
 					<div class="col-md-6">
 						<div class="advantage-item">
@@ -121,6 +125,8 @@
 							</p>
 						</div>
 					</div>
+				</div>
+				<div class='row'>
 					<div class="col-md-6">
 						<div class="advantage-item">
 							<h3 class="advantage-h3">Лояльные цены</h3>
@@ -137,6 +143,8 @@
 							</p>
 						</div>
 					</div>
+				</div>
+				<div class='row'>
 					<div class="col-md-6">
 						<div class="advantage-item">
 							<h3 class="advantage-h3">Удобное месторасположение</h3>
@@ -157,7 +165,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="about-you-box">
+	<div class="about-you-section">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
