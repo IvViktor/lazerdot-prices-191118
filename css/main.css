@@ -2472,9 +2472,11 @@ li#menu-item-2905 a:after {
   transition: margin linear 0.5s;
   min-height: 310px;
   position: relative;
+  width: 500%;
 }
 #about-slider > .about-slider-item {
   float: left;
+  width: 20%;
 }
 .about-slider-item .about-slider-h, .advantage-item h3 {
   font-size: 18px;
@@ -2483,6 +2485,7 @@ li#menu-item-2905 a:after {
 }
 .about-slider-item .about-slider-h {
   margin-bottom: 15px;
+  margin-top: 0;
 }
 .slider-nav {
   margin-top: -70px;
@@ -2515,45 +2518,57 @@ li#menu-item-2905 a:after {
 .advantages-items > .corner-block {
   width: 100px;
   height: 100px;
-  z-index: 200;
+  /*z-index: 200;*/
   background-color: #00bfaf;
 }
 .advantages-items > .corner-block, .advantages-items > .corner-block:before {
   position: absolute;
 }
-.corner-block.corner-top-left, .corner-block.corner-top-left:before {
+.corner-block.corner-top-left {
   top: -15px;
   left: -15px;
 }
 .corner-block.corner-top-left:before {
   content: url(../img/css-aux-img/frame-top-left.png);
+  top: 0;
+  left: 0;
 }
-.corner-block.corner-top-right, .corner-block.corner-top-right:before {
+.corner-block.corner-top-right {
   top: -15px;
   right: -15px;
 }
 .corner-block.corner-top-right:before {
   content: url(../img/css-aux-img/frame-top-right.png);
+  top: 0;
+  right: 0;
 }
-.corner-block.corner-bottom-left, .corner-block.corner-bottom-left:before {
+.corner-block.corner-bottom-left {
   bottom: -15px;
   left: -15px;
 }
 .corner-block.corner-bottom-left:before {
   content: url(../img/css-aux-img/frame-bottom-left.png);
+  bottom: 0;
+  left: 0;
 }
-.corner-block.corner-bottom-right, .corner-block.corner-bottom-right:before {
+.corner-block.corner-bottom-right {
   bottom: -15px;
   right: -15px;
 }
 .corner-block.corner-bottom-right:before {
   content: url(../img/css-aux-img/frame-bottom-right.png);
+  bottom: 0;
+  right: 0;
 }
-.advantages-items >  .row {
-  margin-top: 70px;
-} 
+.advantages-items > .row {
+  margin-bottom: 70px;
+}
+.advantages-items > .row:last-child {
+  margin-bottom: 0;
+}
 .advantages-items .advantage-item {
   z-index: 300;
+  padding-right: 15px;
 }
 .advantage-item h3 {
   position: relative;
@@ -2578,8 +2593,19 @@ li#menu-item-2905 a:after {
 .why-section .section-header,
 .us-section .section-header,
 .doctors-section .section-header {
-  padding-bottom: 12px;
+  padding-bottom: 8px;
   border-bottom: 1px solid #e5e5e5;
+}
+.section-header > div {
+  display: inline-block;
+  position: relative;
+}
+.section-header > div > span.rhombus {
+  right: -60px;
+  top: 7px;
+}
+.about-you-section .section-header {
+  margin-bottom: 28px;
 }
 .why-section {
   margin-bottom: 80px;
@@ -2611,7 +2637,8 @@ li#menu-item-2905 a:after {
 }
 .why-icon:before {
   font-family: "Font Awesome 5 Free";
-  font-size: 150px;
+  font-size: 130px;
+  line-height: 130px;
   font-weight: 900;
   content: '\f0a3';
   text-align: center;
@@ -2662,14 +2689,17 @@ li#menu-item-2905 a:after {
 .us-section .us-sign img {
   margin: auto;
 }
-.certificate-section {
+/*.certificate-section {
   padding: 50px 0;
-}
+}*/
 .certificate-section .container {
   border-top: 1px solid #e5e5e5;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .certificate-section img {
   margin: auto;
+  display: block;
 }
 .doctors-section {
   padding: 70px 0;
@@ -2682,9 +2712,10 @@ li#menu-item-2905 a:after {
   margin-bottom: 20px;
 }
 .doctor-item .doctor-intro {
-  padding: 20px 0;
+  padding: 20px;
   position: relative;
   outline: 1px solid #e5e5e5;
+  margin-bottom: 30px;
 }
 .doctor-item .doctor-intro.active, .doctor-item .doctor-intro:hover {
   background-color: #fff;
@@ -2699,7 +2730,8 @@ li#menu-item-2905 a:after {
   top: 50%;
   margin-top: -11px;
   content: "+";
-  font-size: 16px;
+  font-size: 22px;
+  font-weight: 900;
   line-height: 22px;
   color: #00bfaf;
 }
@@ -2708,7 +2740,7 @@ li#menu-item-2905 a:after {
   color: #4c5059;
 }
 .doctor-intro img {
-  margin: 0 auto 15px;
+  margin: 0 auto;
 }
 .doctor-intro .name {
   text-transform: uppercase;
@@ -2729,6 +2761,7 @@ li#menu-item-2905 a:after {
   margin-bottom: 20px;
   text-align: left;
   text-transform: uppercase;
+  margin-top: 0;
 }
 .doctor-descr .exper-certs-block .col-md-4 {
   margin-bottom: 30px;
@@ -2740,10 +2773,11 @@ li#menu-item-2905 a:after {
   text-indent: 25px;
   position: relative;
   text-align: justify;
+  margin-bottom: 10px;
 }
 .doctor-item ul li:before {
   position: absolute;
-  left: 0;
+  left: -25px;
   font-size: 12px;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;

@@ -169,7 +169,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h2 class="about-you-h2 section-header">O BAC <span class="rhombus"></span></h2>
+					<h2 class="about-you-h2 section-header"><div>O BAC <span class="rhombus"></span></div></h2>
 					<p class="about-you-p">
 					Рассказ о нашей клинике мы, однозначно, должны начать с вас – наших пациентов. Если вы приходите к нам, либо только планируете записаться, это значит, что вы человек, который заботится о своем здоровье и красоте. Вы знаете, что мудрые люди, в первую очередь, инвестируют в свое здоровье и внешность. А мы делаем все возможное, чтоб реализовать ваши пожелания и помочь вам, нашим пациентам, осуществить мечты.
 					</p>
@@ -179,7 +179,7 @@
 	</div>
 	<div class="why-section">
 		<div class="container">
-			<h2 class="why-h2 section-header">Почему выбирают Златадерму <span class="rhombus"></span></h2>
+			<h2 class="why-h2 section-header"><div>Почему выбирают Златадерму <span class="rhombus"></span></div></h2>
 			<div class="row">
 				<div class="col-md-3">
 					<div class="why-icon icon-dollar"></div>
@@ -202,7 +202,7 @@
 	</div>
 	<div class="us-section">
 		<div class="container">
-			<h2 class="us-h2 section-header">О нас <span class="rhombus"></span></h2>
+			<h2 class="us-h2 section-header"><div>О нас <span class="rhombus"></span></div></h2>
 			<div class="row">
 				<div class="col-md-8">
 					<p>
@@ -248,7 +248,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h2 class="acardeon-h2 section-header">наши ведущие врачи <span class="rhombus"></span></h2>
+					<h2 class="acardeon-h2 section-header"><div>наши ведущие врачи <span class="rhombus"></span></div></h2>
 					<div id="doctors-items">
 						<div class="doctor-item">
 						  <div class="doctor-intro">
