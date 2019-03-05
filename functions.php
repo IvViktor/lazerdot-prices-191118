@@ -29,17 +29,34 @@ function remove_head_scripts() {
 
 add_action('wp_enqueue_scripts', 'remove_head_scripts');
 
+/***********************************************************************
+WordPress - Отключаем загрузку файла dashicons.min.css стилей, не для Админов
+ ************************************************************************/
+// remove dashicons
+function wpdocs_dequeue_dashicon() {
+  if (current_user_can( 'update_core' )) {
+    return;
+  }
+  wp_deregister_style('dashicons');
+}
+add_action( 'wp_enqueue_scripts', 'wpdocs_dequeue_dashicon' );
+/***********************************************************************
+ ************************************************************************/
+
 // =============================================================
 // Styles
 // =============================================================
 function add_styles() {
-    wp_enqueue_style('font-awesome', get_stylesheet_directory_uri() . '/css/font-awesome.css');
-    wp_enqueue_style('bootstrap', get_stylesheet_directory_uri() . '/css/bootstrap.css');
-    wp_enqueue_style('font-awesome-web', 'https://use.fontawesome.com/releases/v5.5.0/css/all.css');
-    wp_enqueue_style('theme-style', get_stylesheet_directory_uri() . '/css/main.css', '', '1.0.1');
-	wp_enqueue_style('up', get_stylesheet_directory_uri() . '/css/up.css');
-    wp_enqueue_style('owl', get_stylesheet_directory_uri() . '/css/owl.carousel.min.css');
-    wp_enqueue_style('font', 'https://fonts.googleapis.com/css?family=EB+Garamond|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext');
+    //wp_enqueue_style('font-awesome', get_stylesheet_directory_uri() . '/css/font-awesome.css');
+//    wp_enqueue_style('bootstrap', get_stylesheet_directory_uri() . '/css/bootstrap.css');
+    //wp_enqueue_style('font-awesome-web', 'https://use.fontawesome.com/releases/v5.5.0/css/all.css');
+    //wp_enqueue_style('theme-style', get_stylesheet_directory_uri() . '/css/main.min.css', '', '1.0.1');
+    //	wp_enqueue_style('up', get_stylesheet_directory_uri() . '/css/up.css');
+    //wp_enqueue_style('owl', get_stylesheet_directory_uri() . '/css/owl.carousel.min.css');
+    // wp_enqueue_style('font', 'https://fonts.googleapis.com/css?family=EB+Garamond|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext');
+    if (is_page_template('page-vivan-reviews.php')){
+        wp_enqueue_style('theme-style', get_stylesheet_directory_uri() . '/css/vivan-reviews.css');
+    }
 }
 
 add_action('wp_enqueue_scripts', 'add_styles');
@@ -48,7 +65,7 @@ add_action('wp_enqueue_scripts', 'add_styles');
 // Scripts
 // =============================================================
 function add_scripts() {
-    wp_register_script("jquery", "//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js", array(), null);
+    wp_register_script("jquery", "//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js", array(), null);
     wp_register_script("bootstrap", get_stylesheet_directory_uri() . "/js/vendor/bootstrap.min.js", array("jquery"), null);
     wp_register_script("TweenMax", get_stylesheet_directory_uri() . "/js/vendor/greensock-js/src/minified/TweenMax.min.js");
     wp_register_script('google-map', 'https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&language=ru&key=AIzaSyD7u_UGkHAHL4bOttXAkOlM9_GbW0bOkns');
@@ -63,8 +80,10 @@ function add_scripts() {
     wp_enqueue_script("home-slider");
     wp_enqueue_script("main");
     wp_enqueue_script("modernizr");
-
     wp_localize_script('main', 'variables', array('ajaxurl' => admin_url('admin-ajax.php')));
+    if (is_page_template('page-vivan-reviews.php')){
+        wp_enqueue_script('recaptcha_loader', 'https://www.google.com/recaptcha/api.js?hl=ru');
+    }
 }
 
 add_action('wp_enqueue_scripts', 'add_scripts');
@@ -666,3 +685,10 @@ function lazerdot_register_left_sidebar_menu(){
 	register_nav_menu('left_sidebar_menu', __('Left sidebar menu'));
 }
 add_action('init','lazerdot_register_left_sidebar_menu');
+
+add_filter ( ‘wp_get_attachment_image_attributes’ , ‘wpse8170_add_lazyload_to_attachment_image’ , 10 , 2 );
+function wpse8170_add_lazyload_to_attachment_image ( $attr , $attachment ) {
+$attr [ ‘data-original’ ] = $attr [ ‘src’ ];
+$attr [ ‘src’ ] = ‘grey.gif’ ;
+return $attr ;
+}
