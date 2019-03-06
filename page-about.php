@@ -12,91 +12,95 @@
        <?php while (have_posts()) { the_post(); ?>
             <h1 class="page-title section-header text-center"><?php the_title(); ?></h1>
 	   <?php } ?>
-	   <div id="about-slider">
-			<div class="about-slider-item">
-			   <div class="row">
-					<div class="col-md-6">
-						<h2 class="about-slider-h">Наша клиника</h2>
-						<p class="about-slider-p">
-							Мы всегда рады новым и уже существующим клиентам. Мы ценим всех и каждого. Златадерма - это место, где вы сможете подобрать процедуру на любой вкус. Наш приветливый персонал всегда с удовольствием ответит на любые ваши вопросы. У нас также можно приобрести подарочный сертификат для своих родных и близких людей.
-						</p>
-					</div>
-					<div class="col-md-6">
-						<img class="img-responsive" src="<?php bloginfo('template_url'); ?>/img/about-s-1.jpg" />
-					</div>
-			   </div>
-			</div>
-			<div class="about-slider-item">
-			   <div class="row">
-					<div class="col-md-6">
-						<h2 class="about-slider-h">Гинекология</h2>
-						<p class="about-slider-p">
-							В нашей современной клинике также работает врач-гинеколог. Первичный осмотр с проводится с видеоколькоскопией. Мы поможем справиться со столь деликатными проблемами. Наш врач - это профессионал с огромным стажем и опытом работы! Доверьтесь нам и вы останетесь довольны.					</p>
-					</div>
-					<div class="col-md-6">
-						<img class="img-responsive" src="<?php bloginfo('template_url'); ?>/img/about-s-2.jpg" />
-					</div>
-			   </div>
-			</div>
-			<div class="about-slider-item">
-			   <div class="row" >
-					<div class="col-md-6">
-						<h2 class="about-slider-h">Пластическая хирургия</h2>
-						<p class="about-slider-p">
-							В Златадерме предоставлены самые востребованные пластические операции. Наши врачи широкого профиля также являются сертифицированными специалистами в области интимной пластической операции. Мы подчеркнем ваши достоинства и уберем несовершенности при помощи <a href="https://lazerdot.com.ua/services/plasticheskiy-khirurg-v-nikolaeve/">пластического хирурга в Николаеве</a>.
-						</p>
-					</div>
-					<div class="col-md-6">
-						<img class="img-responsive" src="<?php bloginfo('template_url'); ?>/img/about-s-1.png" />
-					</div>
-			   </div>
-			</div>
-			<div class="about-slider-item">
-			   <div class="row">
-					<div class="col-md-6">
-						<h2 class="about-slider-h">Комната отдыха</h2>
-						<p class="about-slider-p">
-							После прохождения пластической операции каждому нужно время на восстановление и мы готовы предоставить такую возможность совершенно бесплатно. У нас вы сможете отдохнуть после процедур в тишине и спокойствии. Мы обеспечим своевременное и полезное питание и особый уход.
-						</p>
-					</div>
-					<div class="col-md-6">
-						<img class="img-responsive" src="<?php bloginfo('template_url'); ?>/img/about-s-4.jpg" />
-					</div>
-			   </div>
-			</div>
-			<div class="about-slider-item">
-			   <div class="row">
-					<div class="col-md-6">
-						<h2 class="about-slider-h">Косметология</h2>
-						<p class="about-slider-p">
-							Косметология является неотъемлемой частью современной индустрии красоты. В нашей клинике предоставлены только самые эффективные процедуры. Мы работаем с препаратами исключительного качества. Наши косметологи постоянно проходят тренинги у ведущих специалистов.
-						</p>
-					</div>
-					<div class="col-md-6">
-						<img class="img-responsive" src="<?php bloginfo('template_url'); ?>/img/about-s-5.jpg" />
-					</div>
-			   </div>
-			</div>
-		</div>
-		<div class="row slider-nav">
-				<div class="col-md-6">
-					<a href="#about-s-1" class="about-s-btn">
-						<img src="<?php bloginfo('template_url'); ?>/img/about-s-btn1.png" />
-					</a>
-					<a href="#about-s-2" class="about-s-btn">
-						<img src="<?php bloginfo('template_url'); ?>/img/about-s-btn2.png" />
-
-					</a>
-					<a href="#about-s-3" class="about-s-btn">
-						<img src="<?php bloginfo('template_url'); ?>/img/about-s-btn3.png" />
-					</a>
-					<a href="#about-s-4" class="about-s-btn">
-						<img src="<?php bloginfo('template_url'); ?>/img/about-s-btn4.png" />
-					</a>
-					<a href="#about-s-5" class="about-s-btn">
-						<img src="<?php bloginfo('template_url'); ?>/img/about-s-btn5.png" />
-					</a>
+	   <div class="about-slider-wraper">
+		   <div id="about-slider">
+				<div class="about-slider-item">
+				   <div class="row">
+						<div class="col-md-6">
+							<h2 class="about-slider-h">Наша клиника</h2>
+							<p class="about-slider-p">
+								Мы всегда рады новым и уже существующим клиентам. Мы ценим всех и каждого. Златадерма - это место, где вы сможете подобрать процедуру на любой вкус. Наш приветливый персонал всегда с удовольствием ответит на любые ваши вопросы. У нас также можно приобрести подарочный сертификат для своих родных и близких людей.
+							</p>
+						</div>
+						<div class="col-md-6">
+							<img class="img-responsive" src="<?php bloginfo('template_url'); ?>/img/about-s-1.jpg" />
+						</div>
+				   </div>
 				</div>
+				<div class="about-slider-item">
+				   <div class="row">
+						<div class="col-md-6">
+							<h2 class="about-slider-h">Гинекология</h2>
+							<p class="about-slider-p">
+								В нашей современной клинике также работает врач-гинеколог. Первичный осмотр с проводится с видеоколькоскопией. Мы поможем справиться со столь деликатными проблемами. Наш врач - это профессионал с огромным стажем и опытом работы! Доверьтесь нам и вы останетесь довольны.					</p>
+						</div>
+						<div class="col-md-6">
+							<img class="img-responsive" src="<?php bloginfo('template_url'); ?>/img/about-s-2.jpg" />
+						</div>
+				   </div>
+				</div>
+				<div class="about-slider-item">
+				   <div class="row" >
+						<div class="col-md-6">
+							<h2 class="about-slider-h">Пластическая хирургия</h2>
+							<p class="about-slider-p">
+								В Златадерме предоставлены самые востребованные пластические операции. Наши врачи широкого профиля также являются сертифицированными специалистами в области интимной пластической операции. Мы подчеркнем ваши достоинства и уберем несовершенности при помощи <a href="https://lazerdot.com.ua/services/plasticheskiy-khirurg-v-nikolaeve/">пластического хирурга в Николаеве</a>.
+							</p>
+						</div>
+						<div class="col-md-6">
+							<img class="img-responsive" src="<?php bloginfo('template_url'); ?>/img/about-s-1.png" />
+						</div>
+				   </div>
+				</div>
+				<div class="about-slider-item">
+				   <div class="row">
+						<div class="col-md-6">
+							<h2 class="about-slider-h">Комната отдыха</h2>
+							<p class="about-slider-p">
+								После прохождения пластической операции каждому нужно время на восстановление и мы готовы предоставить такую возможность совершенно бесплатно. У нас вы сможете отдохнуть после процедур в тишине и спокойствии. Мы обеспечим своевременное и полезное питание и особый уход.
+							</p>
+						</div>
+						<div class="col-md-6">
+							<img class="img-responsive" src="<?php bloginfo('template_url'); ?>/img/about-s-4.jpg" />
+						</div>
+				   </div>
+				</div>
+				<div class="about-slider-item">
+				   <div class="row">
+						<div class="col-md-6">
+							<h2 class="about-slider-h">Косметология</h2>
+							<p class="about-slider-p">
+								Косметология является неотъемлемой частью современной индустрии красоты. В нашей клинике предоставлены только самые эффективные процедуры. Мы работаем с препаратами исключительного качества. Наши косметологи постоянно проходят тренинги у ведущих специалистов.
+							</p>
+						</div>
+						<div class="col-md-6">
+							<img class="img-responsive" src="<?php bloginfo('template_url'); ?>/img/about-s-5.jpg" />
+						</div>
+				   </div>
+				</div>
+			</div>
+			<div class="row" id="slider-nav">
+					<div class="col-md-6">
+						<?php /*
+						<a href="#about-s-1" class="about-s-btn">
+							<img src="<?php bloginfo('template_url'); ?>/img/about-s-btn1.png" />
+						</a>
+						<a href="#about-s-2" class="about-s-btn">
+							<img src="<?php bloginfo('template_url'); ?>/img/about-s-btn2.png" />
+
+						</a>
+						<a href="#about-s-3" class="about-s-btn">
+							<img src="<?php bloginfo('template_url'); ?>/img/about-s-btn3.png" />
+						</a>
+						<a href="#about-s-4" class="about-s-btn">
+							<img src="<?php bloginfo('template_url'); ?>/img/about-s-btn4.png" />
+						</a>
+						<a href="#about-s-5" class="about-s-btn">
+							<img src="<?php bloginfo('template_url'); ?>/img/about-s-btn5.png" />
+						</a>
+						*/ ?>
+					</div>
+			</div>
 		</div>
     </div>
 

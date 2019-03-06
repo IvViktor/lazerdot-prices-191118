@@ -2467,12 +2467,16 @@ li#menu-item-2905 a:after {
   text-transform: uppercase;
   position: relative;
 }
+.about-content .about-slider-wraper {
+  overflow-x: hidden;
+  position: relative;
+}
 #about-slider {
-  overflow: hidden;
-  transition: margin linear 0.5s;
+  transition: margin 0.5s linear;
   min-height: 310px;
   position: relative;
   width: 500%;
+  display: none;
 }
 #about-slider > .about-slider-item {
   float: left;
@@ -2487,10 +2491,13 @@ li#menu-item-2905 a:after {
   margin-bottom: 15px;
   margin-top: 0;
 }
-.slider-nav {
-  margin-top: -70px;
+#slider-nav {
+  margin-top: -90px;
+  display: none;
+  position: absolute;
+  width: 100%;
 }
-.slider-nav a {
+#slider-nav a {
   display: inline-block;
   width: 70px;
   height: 70px;
@@ -2499,6 +2506,14 @@ li#menu-item-2905 a:after {
   text-decoration: none;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  opacity: 0.6;
+}
+#slider-nav a.active, #slider-nav a:hover {
+  opacity: 1;
+}
+#slider-nav a:hover {
+  cursor: pointer;
 }
 .about-content .advantage-section {
   background-color: #00bfaf;
@@ -2751,6 +2766,7 @@ li#menu-item-2905 a:after {
 .doctor-item .doctor-descr {
   padding-bottom: 25px;
   border-bottom: 1px solid #e5e5e5;
+  display: none;
 }
 .doctor-descr .education {
   margin-bottom: 30px;

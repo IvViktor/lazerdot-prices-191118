@@ -262,3 +262,45 @@ $(document).ready(function(){
     collapsible: true
   });
 });
+
+
+//functions for page-about.php page template
+function nextSlideItem(sliderIndent, sliderItemsNumber, timeoutHolder){
+    if(!sliderItemsNumber || !timeoutHolder) return;
+    window.clearTimeout(timeoutHolder.ID);
+    let marginLeft = sliderIndent * -100;
+    $("#about-slider").css('margin-left', marginLeft + '%');
+    $("#slider-nav a").removeClass('active');
+    $("#slider-nav a[slider-indent=\"" + sliderIndent + "\"]").addClass('active');
+    sliderIndent++;
+    if (sliderIndent >= sliderItemsNumber) sliderIndent = 0;
+    timeoutHolder.ID = window.setTimeout(nextSlideItem, 6000, sliderIndent, sliderItemsNumber, timeoutHolder);
+}
+$(document).ready(function(){
+    $('.doctor-item .doctor-intro').click(function(){
+        $(this).toggleClass('active');
+        $(this).parent().children(".doctor-descr").slideToggle(500);
+    });
+    let sliderItemsNumber = $("#about-slider > .about-slider-item").length;
+    if(sliderItemsNumber && sliderItemsNumber > 0){
+        let sliderWidth = sliderItemsNumber * 100;
+        let sliderItemWidth = 100 / sliderItemsNumber;
+        let timeoutHolder = { ID: 0 };
+        $("#about-slider > .about-slider-item").each(function(itemIndex){
+            let itemImageSrc = $(this).find("img").attr('src');
+            if(!itemImageSrc) return;
+            let itemIconLink = '<a slider-indent="' + itemIndex + '" style="background-image: url(' + itemImageSrc +')"></a>'
+            $('#slider-nav > div').append(itemIconLink);
+            $(this).width(sliderItemWidth + '%');
+        });
+        nextSlideItem(0, sliderItemsNumber, timeoutHolder);
+        $("#about-slider").width(sliderWidth + '%');
+        $("#about-slider").show();
+        $("#slider-nav").show();
+        $("#slider-nav a").click(function(event){
+            event.preventDefault();
+            let sliderIndent = $(this).attr('slider-indent');
+            nextSlideItem(+sliderIndent, sliderItemsNumber, timeoutHolder);
+        });
+    }
+});
