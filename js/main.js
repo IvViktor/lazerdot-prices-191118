@@ -274,7 +274,7 @@ function nextSlideItem(sliderIndent, sliderItemsNumber, timeoutHolder){
     $("#slider-nav a[slider-indent=\"" + sliderIndent + "\"]").addClass('active');
     sliderIndent++;
     if (sliderIndent >= sliderItemsNumber) sliderIndent = 0;
-    timeoutHolder.ID = window.setTimeout(nextSlideItem, 6000, sliderIndent, sliderItemsNumber, timeoutHolder);
+    timeoutHolder.ID = window.setTimeout(nextSlideItem, 3000, sliderIndent, sliderItemsNumber, timeoutHolder);
 }
 $(document).ready(function(){
     $('.doctor-item .doctor-intro').click(function(){
