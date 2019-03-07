@@ -697,3 +697,92 @@ $attr [ ‘data-original’ ] = $attr [ ‘src’ ];
 $attr [ ‘src’ ] = ‘grey.gif’ ;
 return $attr ;
 }
+
+////////////////////////////////////////////////////////////////////////////////////////
+//                              shortcode functions for About US editable page
+//[slideritem] shortcode hander
+function zlata_slideritem_sch($attrs, $content = ""){
+    if(!empty($content)) return '<div class="about-slider-item"><div class="row">' . do_shortcode($content) . '</div></div>';
+}
+add_shortcode( 'slideritem', 'zlata_slideritem_sch' );
+
+//[slideritemtext header=""] shortcode hander
+function zlata_slideritemtext_sch($attrs, $content = ""){
+    $a = shortcode_atts( array(
+            'header' => '',
+        ), $attrs );
+    return '<div class="col-md-6"><h2 class="about-slider-h">' . $a['header'] . '</h2>' . $content . '</div>';
+}
+add_shortcode( 'slideritemtext', 'zlata_slideritemtext_sch' );
+
+//[slideritemphoto] shortcode hander
+function zlata_slideritemphoto_sch($attrs, $content = ""){
+    return '<div class="col-md-6">' . $content . '</div>';
+}
+add_shortcode( 'slideritemphoto', 'zlata_slideritemphoto_sch' );
+
+
+//[advantagerow] shortcode hander
+function zlata_advantagerow_sch($attrs, $content = ""){
+    return '<div class="row">' . do_shortcode($content) . '</div>';
+}
+add_shortcode( 'advantagerow', 'zlata_advantagerow_sch' );
+
+//[advantageitem header=""] shortcode hander
+function zlata_advantageitem_sch($attrs, $content = ""){
+    $a = shortcode_atts( array(
+            'header' => '',
+        ), $attrs );
+    return '<div class="col-md-6"><div class="advantage-item"><h3 class="advantage-h3">' . $a['header'] . '</h3>' . $content . '</div></div>';
+}
+add_shortcode( 'advantageitem', 'zlata_advantageitem_sch' );
+
+
+//[doctoritem] shortcode hander
+function zlata_doctoritem_sch($attrs, $content = ""){
+    return '<div class="doctor-item">' . do_shortcode($content) . '</div>';
+}
+add_shortcode( 'doctoritem', 'zlata_doctoritem_sch' );
+
+//[doctorintro name="" spec=""] shortcode hander
+function zlata_doctorintro_sch($attrs, $content = ""){
+    $a = shortcode_atts( array(
+            'name' => 'Иванов Иван Ивановичь',
+            'spec' => 'Врач-дерматолог'
+        ), $attrs );
+    $result = '<div class="doctor-intro"><div class="row"><div class="col-sm-2">' . $content . '</div><div class="col-sm-10">';
+    $result .= '<div class="name">' . $a['name'] . '</div>';
+    $result .= '<div class="spec">' . $a['spec'] . '</div></div></div></div>';
+    return $result;
+}
+add_shortcode( 'doctorintro', 'zlata_doctorintro_sch' );
+
+//[doctordescr] shortcode hander
+function zlata_doctordescr_sch($attrs, $content = ""){
+    return '<div class="doctor-descr">' . do_shortcode($content) . '</div>';
+}
+add_shortcode( 'doctordescr', 'zlata_doctordescr_sch' );
+
+//[doctoreducation] shortcode hander
+function zlata_doctoreducation_sch($attrs, $content = ""){
+    return '<div class="education"><div class="row"><div class="col-md-12"><h3>Образование:</h3>' . $content . '</div></div></div>';
+}
+add_shortcode( 'doctoreducation', 'zlata_doctoreducation_sch' );
+
+//[doctoradditional] shortcode hander
+function zlata_doctoradditional_sch($attrs, $content = ""){
+    return '<div class="exper-certs-block"><div class="row">' . do_shortcode($content) . '</div></div>';
+}
+add_shortcode( 'doctoradditional', 'zlata_doctoradditional_sch' );
+
+//[doctorexperience] shortcode hander
+function zlata_doctorexperience_sch($attrs, $content = ""){
+    return '<div class="col-md-4"><h3>Опыт работы:</h3>' . $content . '</div>';
+}
+add_shortcode( 'doctorexperience', 'zlata_doctorexperience_sch' );
+
+//[doctorcertificates] shortcode hander
+function zlata_doctorcertificates_sch($attrs, $content = ""){
+    return '<div class="col-md-8"><h3>Сертификаты:</h3>' . $content . '</div>';
+}
+add_shortcode( 'doctorcertificates', 'zlata_doctorcertificates_sch' );
