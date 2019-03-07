@@ -57,7 +57,7 @@ function add_styles() {
     if (is_page_template('page-vivan-reviews.php')){
         wp_enqueue_style('theme-style', get_stylesheet_directory_uri() . '/css/vivan-reviews.css');
     }
-    if (is_page_template('page-about.php')){
+    if (is_page_template('page-about.php') || is_page_template('page-about-editable.php')){
       wp_enqueue_style('main-theme-style', get_stylesheet_directory_uri() . '/css/main.css');
       wp_enqueue_style('font-awesome-web', 'https://use.fontawesome.com/releases/v5.5.0/css/all.css');
       wp_enqueue_style('font', 'https://fonts.googleapis.com/css?family=EB+Garamond|Roboto:300,300i,400,400i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext');
