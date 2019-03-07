@@ -229,7 +229,7 @@
 					</p>
 				</div>
 				<div class="col-md-4">
-					<img class="img-responsive pull-right" src="<?php bloginfo('template_url'); ?>/img/lv.jpeg" alt="косметологическая клиника Николаев" />
+					<img src="<?php bloginfo('template_url'); ?>/img/lv.jpeg" alt="косметологическая клиника Николаев" />
 				</div>
 			</div>
 			<h3 class="us-slogan text-center">С уважением, директор клиники ЗлатаДерма</h3>
@@ -239,10 +239,10 @@
 	<div class="certificate-section">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-xs-6">
 					<img src="<?php bloginfo('template_url'); ?>/img/sert-1.png" alt="клиника пластической хирургии" />
 				</div>
-				<div class="col-md-6">
+				<div class="col-xs-6">
 					<img src="<?php bloginfo('template_url'); ?>/img/sert-2.png" alt="клиника косметологии" />
 				</div>
 			</div>
