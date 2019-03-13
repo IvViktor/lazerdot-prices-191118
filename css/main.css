@@ -2856,3 +2856,38 @@ li#menu-item-2905 a:after {
     margin-bottom: 10px;
   }  
 }
+
+
+
+/*styles for services icons section on main index.php page */
+.index-services-section .services-item {
+  margin-bottom: 70px;
+}
+.services-item .item-icon {
+  display: block;
+  margin: auto;
+  width: 160px;
+  height: 160px;
+  border-radius: 100%;
+  box-shadow: 0px 3px 15px #4c5059;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+.services-item .item-content {
+  font-family: "Roboto", serif;
+}
+.services-item .item-content > h3 {
+  font-weight: 700;
+  font-size: 18px;
+  color: #03baab;
+  margin-bottom: 18px;
+  text-align: left;
+}
+.services-item .item-content > p {
+  font-weight: 300;
+  font-size: 14px;
+  color: #4c5059;
+  text-align: justify;
+}
