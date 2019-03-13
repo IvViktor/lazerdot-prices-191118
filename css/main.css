@@ -2891,3 +2891,16 @@ li#menu-item-2905 a:after {
   color: #4c5059;
   text-align: justify;
 }
+
+@media (max-width: 767px){
+  .index-services-section .services-item {
+    margin-bottom: 50px;
+  }
+  .services-item .item-icon {
+    margin-bottom: 20px;
+  }
+  .services-item .item-content {
+    max-width: 310px;
+    margin: auto;
+  }
+}
