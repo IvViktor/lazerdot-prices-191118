@@ -2866,10 +2866,10 @@ li#menu-item-2905 a:after {
 .services-item .item-icon {
   display: block;
   margin: auto;
-  width: 160px;
-  height: 160px;
+  width: 130px;
+  height: 130px;
   border-radius: 100%;
-  box-shadow: 0px 3px 15px #4c5059;
+  box-shadow: 0 5px 9px #c5c5c5;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2962,14 +2962,24 @@ li#menu-item-2905 a:after {
     height: auto;
     text-align: center;
   }
+  #searchform-menu-item .searchbutton:before {
+    content: "\f002";
+    color: #00bfaf;
+  }
   #searchform-menu-item .searchbutton:after {
     content: "\f002";
-    color: #c5c5c5;
   }
   #searchform-menu-item .searchbutton:hover,
   #searchform-menu-item.active .searchbutton {
     border: none;
     background-color: #f5f5f5;
+  }
+  #searchform-menu-item.active .searchbutton:before {
+    display: none;
+  }
+  #searchform-menu-item.active .searchbutton:after {
+    display: block;
+    color: #c5c5c5;
   }
   #searchform {
     position: absolute;
