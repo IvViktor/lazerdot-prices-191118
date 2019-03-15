@@ -2863,17 +2863,22 @@ li#menu-item-2905 a:after {
 .index-services-section .services-item {
   margin-bottom: 70px;
 }
-.services-item .item-icon {
+.services-item a.item-icon {
   display: block;
-  margin: auto;
+  margin: 10px auto 0;
   width: 130px;
   height: 130px;
   border-radius: 100%;
-  box-shadow: 0 5px 9px #c5c5c5;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  box-shadow: 0 4px 10px #c5c5c5;
+  overflow: hidden;
+  text-decoration: none;
+}
+.services-item .item-icon img {
+  display: block;
+  margin: auto;
   vertical-align: middle;
+  max-width: 100%;
+  max-height: 100%;
 }
 .services-item .item-content {
   font-family: "Roboto", serif;
@@ -2892,12 +2897,12 @@ li#menu-item-2905 a:after {
   text-align: justify;
 }
 
-@media (max-width: 767px){
+@media (max-width: 991px){
   .index-services-section .services-item {
     margin-bottom: 50px;
   }
   .services-item .item-icon {
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
   }
   .services-item .item-content {
     max-width: 310px;
@@ -2905,7 +2910,7 @@ li#menu-item-2905 a:after {
   }
 }
 
-/* styles for custom hamburger menu for index.php main site home page*/
+/* styles for custom menu hamnurger and search button for home page for mobile phones viewport*/
 @media (max-width: 767px){
   header h4, header:after {
     display: none;
@@ -2930,6 +2935,12 @@ li#menu-item-2905 a:after {
   nav menu > li {
     background-color: #fff !important;
   }
+  nav menu > li, nav menu > li > a {
+    opacity: 0
+  }
+  nav menu.opened > li, nav menu.opened > li > a {
+    opacity: 1;
+  }
   nav .c-hamburger {
     bottom: 8px;
   }
@@ -2944,6 +2955,7 @@ li#menu-item-2905 a:after {
     display: inline-block;
     width: 37px;
     visibility: visible;
+    opacity: 1;
   }
   #searchform-menu-item .searchbutton {
     display: block;
