@@ -19,41 +19,121 @@
             </p>
         </div>
     </section>
+    
 
     <section>
         <div class="container">
             <h2 class="title">Услуги</h2>
-
+            <?php   wp_reset_postdata();
+                    if(have_posts()): the_post(); ?>
+            <?php   //NOTE: ACF checkbox field type return array of values by default
+                    $zlata_cust_serv_displ = get_field('zlata_services_display_custom');
+                    if(is_array($zlata_cust_serv_displ) && in_array('display', $zlata_cust_serv_displ)):  ?> 
             <div class="index-services-section">
                 <div class="row">
+                <?php   $service_item_1 = get_field('service_item_1');
+                        if ($service_item_1): ?>
                     <div class="col-xs-6 services-item">
                         <div class="row">
                             <div class="col-md-4">
-                                <a class="item-icon" href="">
-                                    <img src="<?php bloginfo('template_url'); ?>/img/temp/s1.jpg" />
+                                <a class="item-icon" href="<?php echo $service_item_1['link_href']; ?>">
+                                    <img src="<?php echo $service_item_1['image']['url']; ?>" alt="<?php echo $service_item_1['image']['alt']; ?>" />
                                 </a>
                             </div>
                             <div class="col-md-8 item-content">
-                                <h3>Item header</h3>
-                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                <h3><?php echo $service_item_1['title']; ?></h3>
+                                <p> <?php echo $service_item_1['description']; ?></p>
                             </div>
                         </div>
                     </div>
+                <?php   endif;
+                        $service_item_2 = get_field('service_item_2');
+                        if ($service_item_2): ?>
                     <div class="col-xs-6 services-item">
                         <div class="row">
                             <div class="col-md-4">
-                                <a class="item-icon" href="">
-                                    <img src="<?php bloginfo('template_url'); ?>/img/temp/s1.jpg" />
+                                <a class="item-icon" href="<?php echo $service_item_2['link_href']; ?>">
+                                    <img src="<?php echo $service_item_2['image']['url']; ?>" alt="<?php echo $service_item_2['image']['alt']; ?>" />
                                 </a>
                             </div>
                             <div class="col-md-8 item-content">
-                                <h3>ITEM HEADER</h3>
-                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                <h3><?php echo $service_item_2['title']; ?></h3>
+                                <p> <?php echo $service_item_2['description']; ?></p>
                             </div>
                         </div>
                     </div>
+                <?php endif; ?>
+                </div>
+                <div class="row">
+                <?php   $service_item_3 = get_field('service_item_3');
+                        if ($service_item_3): ?>
+                    <div class="col-xs-6 services-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <a class="item-icon" href="<?php echo $service_item_3['link_href']; ?>">
+                                    <img src="<?php echo $service_item_3['image']['url']; ?>" alt="<?php echo $service_item_3['image']['alt']; ?>" />
+                                </a>
+                            </div>
+                            <div class="col-md-8 item-content">
+                                <h3><?php echo $service_item_3['title']; ?></h3>
+                                <p> <?php echo $service_item_3['description']; ?></p>
+                            </div>
+                        </div>
+                    </div>
+                <?php   endif;
+                        $service_item_4 = get_field('service_item_4');
+                        if ($service_item_4): ?>
+                    <div class="col-xs-6 services-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <a class="item-icon" href="<?php echo $service_item_4['link_href']; ?>">
+                                    <img src="<?php echo $service_item_4['image']['url']; ?>" alt="<?php echo $service_item_4['image']['alt']; ?>" />
+                                </a>
+                            </div>
+                            <div class="col-md-8 item-content">
+                                <h3><?php echo $service_item_4['title']; ?></h3>
+                                <p> <?php echo $service_item_4['description']; ?></p>
+                            </div>
+                        </div>
+                    </div>
+                <?php endif; ?>
+                </div>
+                <div class="row">
+                <?php   $service_item_5 = get_field('service_item_5');
+                        if ($service_item_5): ?>
+                    <div class="col-xs-6 services-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <a class="item-icon" href="<?php echo $service_item_5['link_href']; ?>">
+                                    <img src="<?php echo $service_item_5['image']['url']; ?>" alt="<?php echo $service_item_5['image']['alt']; ?>" />
+                                </a>
+                            </div>
+                            <div class="col-md-8 item-content">
+                                <h3><?php echo $service_item_5['title']; ?></h3>
+                                <p> <?php echo $service_item_5['description']; ?></p>
+                            </div>
+                        </div>
+                    </div>
+                <?php   endif;
+                        $service_item_6 = get_field('service_item_6');
+                        if ($service_item_6): ?>
+                    <div class="col-xs-6 services-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <a class="item-icon" href="<?php echo $service_item_6['link_href']; ?>">
+                                    <img src="<?php echo $service_item_6['image']['url']; ?>" alt="<?php echo $service_item_6['image']['alt']; ?>" />
+                                </a>
+                            </div>
+                            <div class="col-md-8 item-content">
+                                <h3><?php echo $service_item_6['title']; ?></h3>
+                                <p> <?php echo $service_item_6['description']; ?></p>
+                            </div>
+                        </div>
+                    </div>
+                <?php endif; ?>
                 </div>
             </div>
+            <?php else: ?>
 
             <ul class="list-blog">
                 <li>
@@ -117,8 +197,11 @@
                     </div>
                 </li>
             </ul>
+            <?php endif; ?>
+            <?php endif; ?>
         </div>
     </section>
+    
 
     <section class="bg-gray girl-right">
         <div class="container">
