@@ -85,7 +85,7 @@
 
 
 
-    <?php if (is_home()) { ?>
+    <?php if (is_front_page()) { ?>
         <div id="after-header">
             <div class="container">
 
