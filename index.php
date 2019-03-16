@@ -37,7 +37,7 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <a class="item-icon" href="<?php echo $service_item_1['link_href']; ?>">
-                                    <img src="<?php echo $service_item_1['image']['url']; ?>" alt="<?php echo $service_item_1['image']['alt']; ?>" />
+                                    <img src="<?php echo $service_item_1['service_icon']['url']; ?>" alt="<?php echo $service_item_1['service_icon']['alt']; ?>" />
                                 </a>
                             </div>
                             <div class="col-md-8 item-content">
@@ -53,7 +53,7 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <a class="item-icon" href="<?php echo $service_item_2['link_href']; ?>">
-                                    <img src="<?php echo $service_item_2['image']['url']; ?>" alt="<?php echo $service_item_2['image']['alt']; ?>" />
+                                    <img src="<?php echo $service_item_2['service_icon']['url']; ?>" alt="<?php echo $service_item_2['service_icon']['alt']; ?>" />
                                 </a>
                             </div>
                             <div class="col-md-8 item-content">
@@ -71,7 +71,7 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <a class="item-icon" href="<?php echo $service_item_3['link_href']; ?>">
-                                    <img src="<?php echo $service_item_3['image']['url']; ?>" alt="<?php echo $service_item_3['image']['alt']; ?>" />
+                                    <img src="<?php echo $service_item_3['service_icon']['url']; ?>" alt="<?php echo $service_item_3['service_icon']['alt']; ?>" />
                                 </a>
                             </div>
                             <div class="col-md-8 item-content">
@@ -87,7 +87,7 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <a class="item-icon" href="<?php echo $service_item_4['link_href']; ?>">
-                                    <img src="<?php echo $service_item_4['image']['url']; ?>" alt="<?php echo $service_item_4['image']['alt']; ?>" />
+                                    <img src="<?php echo $service_item_4['service_icon']['url']; ?>" alt="<?php echo $service_item_4['service_icon']['alt']; ?>" />
                                 </a>
                             </div>
                             <div class="col-md-8 item-content">
@@ -105,7 +105,7 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <a class="item-icon" href="<?php echo $service_item_5['link_href']; ?>">
-                                    <img src="<?php echo $service_item_5['image']['url']; ?>" alt="<?php echo $service_item_5['image']['alt']; ?>" />
+                                    <img src="<?php echo $service_item_5['service_icon']['url']; ?>" alt="<?php echo $service_item_5['service_icon']['alt']; ?>" />
                                 </a>
                             </div>
                             <div class="col-md-8 item-content">
@@ -121,7 +121,7 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <a class="item-icon" href="<?php echo $service_item_6['link_href']; ?>">
-                                    <img src="<?php echo $service_item_6['image']['url']; ?>" alt="<?php echo $service_item_6['image']['alt']; ?>" />
+                                    <img src="<?php echo $service_item_6['service_icon']['url']; ?>" alt="<?php echo $service_item_6['service_icon']['alt']; ?>" />
                                 </a>
                             </div>
                             <div class="col-md-8 item-content">
