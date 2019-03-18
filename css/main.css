@@ -2474,6 +2474,8 @@ li#menu-item-2905 a:after {
 #about-slider {
   transition: margin 0.5s linear;
   min-height: 310px;
+  max-height: 340px;
+  overflow: hidden;
   position: relative;
   width: 500%;
   display: none;
@@ -2493,6 +2495,8 @@ li#menu-item-2905 a:after {
 }
 .about-slider-item img {
   margin: auto;
+  width: 100%;
+  height: auto;
 }
 #slider-nav {
   margin-top: -90px;
@@ -2502,8 +2506,8 @@ li#menu-item-2905 a:after {
 }
 #slider-nav a {
   display: inline-block;
-  width: 70px;
-  height: 70px;
+  width: 65px;
+  height: 65px;
   border-radius: 100%;
   margin: 7px 5px;
   text-decoration: none;
@@ -2529,7 +2533,7 @@ li#menu-item-2905 a:after {
 }
 .advantage-section .advantages-items {
   border: 1px solid #fff;
-  padding: 65px 40px;
+  padding: 65px 40px 0px;
   z-index: 100;
   position: relative;
 }
@@ -2772,6 +2776,7 @@ li#menu-item-2905 a:after {
   padding-bottom: 25px;
   border-bottom: 1px solid #e5e5e5;
   display: none;
+  overflow: hidden;
 }
 .doctor-descr .education {
   margin-bottom: 30px;
